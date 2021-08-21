@@ -20,6 +20,109 @@
     <title>Purple Yoga Hawaii &mdash; Waikiki-Ala Moana, Honolulu</title>
   </head>
   <body>
+    <!--  -->
+    <!-- FORMS -->
+    <!-- SUBMIT BUTTONS ARE OUTSIDE THE FORM -->
+    <!-- SUBMIT BUTTONS ARE OUTSIDE THE FORM -->
+    <!-- SUBMIT BUTTONS ARE OUTSIDE THE FORM -->
+    <!-- SUBMIT BUTTONS ARE OUTSIDE THE FORM -->
+
+    <!--  -->
+    <!-- BUTTONS AND FORMS ARE LINKED THROUGH THE ID OF THE FORM AND THE FORM ATTRIBUTE OF THE BUTTON -->
+    <!--  -->
+    <form
+      id="one-tote"
+      action="https://api.convergepay.com/VirtualMerchant/process.do"
+      target="_blank"
+      method="post"
+    >
+      <input type="hidden" name="ssl_merchant_id" value="515783" />
+      <input type="hidden" name="ssl_user_id" value="internet" />
+      <input type="hidden" name="ssl_pin" value="DAHXCP" />
+      <input type="hidden" name="ssl_show_form" value="true" />
+      <input type="hidden" name="ssl_cvv2cvc2_indicator" value="1" />
+      <input type="hidden" name="ssl_price" value="24.00" />
+      <input type="hidden" name="ssl_salestax" value="1.13" />
+      <input type="hidden" name="shipping" value="5.00" />
+      <input type="hidden" name="ssl_amount" value="30.13" />
+      <input type="hidden" name="ssl_transaction_type" value="ccsale" />
+      <input type="hidden" name="ssl_description" value="One canvas tote" />
+      <!-- <input type="submit" value="One Tote"> -->
+    </form>
+    <form
+      id="one-tenugui"
+      action="https://api.convergepay.com/VirtualMerchant/process.do"
+      target="_blank"
+      method="post"
+    >
+      <input type="hidden" name="ssl_merchant_id" value="515783" />
+      <input type="hidden" name="ssl_user_id" value="internet" />
+      <input type="hidden" name="ssl_pin" value="DAHXCP" />
+      <input type="hidden" name="ssl_show_form" value="true" />
+      <input type="hidden" name="ssl_cvv2cvc2_indicator" value="1" />
+      <input type="hidden" name="ssl_price" value="18.00" />
+      <input type="hidden" name="ssl_salestax" value="0.85" />
+      <input type="hidden" name="shipping" value="0.70" />
+      <input type="hidden" name="ssl_amount" value="19.55" />
+      <input type="hidden" name="ssl_transaction_type" value="ccsale" />
+      <input type="hidden" name="ssl_description" value="One tenugui towel" />
+      <!-- <input type="submit" value="One Tenugui"> -->
+    </form>
+    <form
+      id="one-tote-plus-one-tenugui"
+      action="https://api.convergepay.com/VirtualMerchant/process.do"
+      target="_blank"
+      method="post"
+    >
+      <input type="hidden" name="ssl_merchant_id" value="515783" />
+      <input type="hidden" name="ssl_user_id" value="internet" />
+      <input type="hidden" name="ssl_pin" value="DAHXCP" />
+      <input type="hidden" name="ssl_show_form" value="true" />
+      <input type="hidden" name="ssl_cvv2cvc2_indicator" value="1" />
+      <input type="hidden" name="ssl_price" value="42.00" />
+      <input type="hidden" name="ssl_salestax" value="1.98" />
+      <input type="hidden" name="shipping" value="5.30" />
+      <input type="hidden" name="ssl_amount" value="49.28" />
+      <input type="hidden" name="ssl_transaction_type" value="ccsale" />
+      <input
+        type="hidden"
+        name="ssl_description"
+        value="One tote &#43; one tenugui"
+      />
+      <!-- <input type="submit" value="One Tote &#43; One Tenugui"> -->
+    </form>
+    <form
+      id="one-rug-plus-one-tenugui"
+      action="https://api.convergepay.com/VirtualMerchant/process.do"
+      target="_blank"
+      method="post"
+    >
+      <input type="hidden" name="ssl_merchant_id" value="515783" />
+      <input type="hidden" name="ssl_user_id" value="internet" />
+      <input type="hidden" name="ssl_pin" value="DAHXCP" />
+      <input type="hidden" name="ssl_show_form" value="true" />
+      <input type="hidden" name="ssl_cvv2cvc2_indicator" value="1" />
+      <input type="hidden" name="ssl_price" value="78.00" />
+      <input type="hidden" name="ssl_salestax" value="3.67" />
+      <input type="hidden" name="shipping" value="15.50" />
+      <input type="hidden" name="ssl_amount" value="97.17" />
+      <input type="hidden" name="ssl_transaction_type" value="ccsale" />
+      <input
+        type="hidden"
+        name="ssl_description"
+        value="One rug &#43; one tenugui"
+      />
+      <!-- <input type="submit" value="One Rug &#43; One Tenugui"> -->
+    </form>
+    <!--  -->
+    <!-- END OF FORMS -->
+    <!-- END OF FORMS -->
+    <!-- END OF FORMS -->
+    <!-- END OF FORMS -->
+    <!-- END OF FORMS -->
+    <!-- END OF FORMS -->
+    <!--  -->
+
     <header>
       <div class="navbar-fixed">
         <nav class="purple darken-4">
@@ -133,29 +236,54 @@
                 than provided below, or to ship overseas, please email your
                 request and we will send you a special link.
               </li>
+
+              <!--  -->
+              <!-- BUTTONS FOR FORM -->
+              <!-- BUTTONS FOR FORM -->
+              <!-- BUTTONS FOR FORM -->
+              <!-- BUTTONS FOR FORM -->
+              <!--  -->
               <li class="collection-item">
                 <button
+                  form="one-tote"
+                  type="submit"
                   class="waves-effect waves-light btn"
                   style="width: 100%"
                 >
                   One Tote</button
-                ><br /><button
+                ><br />
+                <button
+                  form="one-tenugui"
+                  type="submit"
                   class="waves-effect waves-light btn"
                   style="width: 100%; margin-top: 10px"
                 >
                   One Tenugui</button
-                ><br /><button
+                ><br />
+                <button
+                  form="one-tote-plus-one-tenugui"
+                  type="submit"
                   class="waves-effect waves-light btn"
                   style="width: 100%; margin-top: 10px"
                 >
-                  Onte Tote + One Tenugui</button
-                ><br /><button
+                  One Tote + One Tenugui</button
+                ><br />
+                <button
+                  form="one-rug-plus-one-tenugui"
+                  type="submit"
                   class="waves-effect waves-light btn"
                   style="width: 100%; margin-top: 10px"
                 >
                   One Rug + One Tenugui
                 </button>
               </li>
+
+              <!--  -->
+              <!-- END OF BUTTONS FOR FORM -->
+              <!-- END OF BUTTONS FOR FORM -->
+              <!-- END OF BUTTONS FOR FORM -->
+              <!-- END OF BUTTONS FOR FORM -->
+              <!--  -->
             </ul>
           </div>
         </div>
@@ -165,7 +293,9 @@
     <footer class="page-footer purple darken-4">
       <div class="footer-copyright">
         <div class="container">
-          <span class="purple-text text-lighten-5"> © Copyright 2001–2021</span>
+          <a href="copyright.html" class="purple-text text-lighten-5">
+            © Copyright 2001–2021</a
+          >
           <span class="grey-text text-lighten-4 right">
             <a
               href="https://www.facebook.com/PurpleYogaHawaii/"
