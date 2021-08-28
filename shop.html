@@ -329,6 +329,13 @@
       var baseCard;
       var con;
       var handleCardContent = () => {
+        if (window.innerWidth <= 600) {
+          Array.prototype.forEach.call(cardContents, function (node) {
+            node.style.height = "auto";
+          });
+          return;
+        }
+
         var newHeight = 0;
         if (baseCard === undefined) {
           Array.prototype.forEach.call(cardContents, function (node) {
