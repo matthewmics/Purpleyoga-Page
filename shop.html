@@ -130,7 +130,7 @@
             <img
               src="assets/logo.gif"
               alt="logo"
-              class="brand-logo center"
+              class="brand-logo hide"
               style="height: 100%"
             />
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
@@ -189,9 +189,9 @@
     </header>
 
     <main>
-      <div class="container">
+      <div class="container" id="con">
         <div class="row">
-          <div class="col l4 offset-l2">
+          <div class="col m6">
             <div class="card">
               <div class="card-image">
                 <img src="assets/photo_tote.jpg" style="height: 350px" />
@@ -206,6 +206,8 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="col m6">
             <div class="card">
               <div class="card-image">
                 <img src="assets/photo_tenugui.jpg" style="height: 350px" />
@@ -214,7 +216,7 @@
                 <span class="card-title" style="font-weight: bold"
                   >Tenugui Towel $18</span
                 >
-                <p style="font-size: 13px">
+                <p>
                   The go-to hand towel for many Ashtanga Yoga practitioners in
                   Hawaii is a Japanese tenugui. Made from 100% light cotton, our
                   towel follows tradition by having unfinished edges. Our
@@ -224,7 +226,7 @@
               </div>
             </div>
           </div>
-          <div class="col l4">
+          <div class="col l6">
             <ul class="collection with-header">
               <li class="collection-header">
                 <h5 class="purple-text">To Order</h5>
@@ -247,7 +249,7 @@
                 <button
                   form="one-tote"
                   type="submit"
-                  class="waves-effect waves-light btn"
+                  class="waves-effect waves-light btn grey btn-flat lighten-3"
                   style="width: 100%"
                 >
                   One Tote</button
@@ -255,7 +257,7 @@
                 <button
                   form="one-tenugui"
                   type="submit"
-                  class="waves-effect waves-light btn"
+                  class="waves-effect waves-light btn grey btn-flat lighten-3"
                   style="width: 100%; margin-top: 10px"
                 >
                   One Tenugui</button
@@ -263,7 +265,7 @@
                 <button
                   form="one-tote-plus-one-tenugui"
                   type="submit"
-                  class="waves-effect waves-light btn"
+                  class="waves-effect waves-light btn grey btn-flat lighten-3"
                   style="width: 100%; margin-top: 10px"
                 >
                   One Tote + One Tenugui</button
@@ -271,7 +273,7 @@
                 <button
                   form="one-rug-plus-one-tenugui"
                   type="submit"
-                  class="waves-effect waves-light btn"
+                  class="waves-effect waves-light btn grey btn-flat lighten-3"
                   style="width: 100%; margin-top: 10px"
                 >
                   One Rug + One Tenugui
@@ -321,5 +323,34 @@
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <script src="vendor/initialize.nav.js"></script>
     <script src="vendor/script.js"></script>
+
+    <script>
+      var cardContents;
+      var baseCard;
+      var con;
+      var handleCardContent = () => {
+        var newHeight = 0;
+        if (baseCard === undefined) {
+          Array.prototype.forEach.call(cardContents, function (node) {
+            if (newHeight < node.offsetHeight) {
+              baseCard = node;
+              newHeight = node.offsetHeight;
+            }
+          });
+        }
+        Array.prototype.forEach.call(cardContents, function (node) {
+          if (baseCard === node) return;
+          node.style.height = baseCard.offsetHeight + "px";
+        });
+      };
+      (function () {
+        cardContents = document.querySelectorAll(".card-content");
+        con = document.getElementById("con");
+        handleCardContent();
+        window.addEventListener("resize", () => {
+          handleCardContent();
+        });
+      })();
+    </script>
   </body>
 </html>

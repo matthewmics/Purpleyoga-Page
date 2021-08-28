@@ -27,7 +27,7 @@
             <img
               src="assets/logo.gif"
               alt="logo"
-              class="brand-logo center"
+              class="brand-logo hide"
               style="height: 100%"
             />
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
@@ -133,7 +133,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col s12 l6 offset-l2">
+          <div class="col s12 l8" id="content">
             <div class="card" id="ashtanga">
               <div class="card-image">
                 <img src="assets/photo_ashtanga.jpg" />
@@ -214,8 +214,8 @@
                   Vinyasa Flow Yoga is creative, fluid, challenging and fun. The
                   teacher is free to improvise dynamic sequences drawn from the
                   infinite possibilities of yoga asanas. In Saturday's Level Two
-                  class, <a href="profiles.html#cathy">Cathy Louise</a> blends intermediate and some advanced
-                  poses at a vigorous pace.
+                  class, <a href="profiles.html#cathy">Cathy Louise</a> blends
+                  intermediate and some advanced poses at a vigorous pace.
                 </p>
                 <br />
                 <p>
@@ -269,8 +269,9 @@
                   limitations, please email or call (808) 944-8585 before coming
                   to class. No drop-ins. We recommend starting after your
                   thirteenth week. Ask your health care provider if yoga is
-                  appropriate for you. The teacher is <a href="profiles.html#cathy">Cathy Louise</a>, a mom of
-                  three including twins.
+                  appropriate for you. The teacher is
+                  <a href="profiles.html#cathy">Cathy Louise</a>, a mom of three
+                  including twins.
                 </p>
                 <br />
                 <p class="red-text">Get a free DVD with your first class</p>
@@ -304,14 +305,16 @@
                   crawling and for mothers who have been cleared by their
                   doctors to resume exercise. Due to space limitations, please
                   email or call (808) 944-8585 before coming to class. No
-                  drop-ins. The teacher <a href="profiles.html#cathy">Cathy Louise</a> is a mom of three including
-                  twins.
+                  drop-ins. The teacher
+                  <a href="profiles.html#cathy">Cathy Louise</a> is a mom of
+                  three including twins.
                 </p>
               </div>
             </div>
           </div>
           <div
-            class="col l3 buttons-option hide-on-med-and-down"
+            id="menu-large"
+            class="col l4 buttons-option hide-on-med-and-down"
             style="padding-top: 1em"
           >
             <div>
@@ -357,7 +360,10 @@
           </div>
         </div>
         <div class="fixed-action-btn hide" style="margin-bottom: 27px">
-          <a class="btn-floating btn-large purple darken-4" onclick="handleScroll()">
+          <a
+            class="btn-floating btn-large purple darken-4"
+            onclick="handleScroll()"
+          >
             <i class="material-icons">arrow_upward</i>
           </a>
         </div>
@@ -397,23 +403,28 @@
     <script src="vendor/script.js"></script>
 
     <script>
-      var elem = document.querySelector(".fixed-action-btn");
-      document.addEventListener("DOMContentLoaded", function () {
-        var instances = M.FloatingActionButton.init(elem, {});
-      });
-
-      window.addEventListener("scroll", (ev) => {
-        if (!elem) return;
-        if (window.scrollY >= 200) {
-          elem.classList.remove("hide");
-        } else {
-          elem.classList.add("hide");
-        }
-      });
 
       var handleScroll = () => {
         window.scrollTo(0, 0);
       };
+
+      (function () {
+        var elem = document.querySelector(".fixed-action-btn");
+
+        document.addEventListener("DOMContentLoaded", function () {
+          var instances = M.FloatingActionButton.init(elem, {});
+        });
+
+        window.addEventListener("scroll", (ev) => {
+          if (!elem) return;
+          if (window.scrollY >= 200) {
+            elem.classList.remove("hide");
+          } else {
+            elem.classList.add("hide");
+          }
+        });
+
+      })();
     </script>
   </body>
 </html>
