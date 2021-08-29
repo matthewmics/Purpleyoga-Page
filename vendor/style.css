@@ -7,6 +7,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: #eceff1;
 }
 
 main {
@@ -83,4 +84,12 @@ main {
 
 .buttons-option a {
   margin-top: 15px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.collapsible-body{
+  background-color: white;
 }
