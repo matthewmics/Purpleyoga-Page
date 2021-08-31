@@ -117,9 +117,16 @@ main {
 }
 
 .bold-text {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .collapsible-body {
   background-color: white;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -64px;
+  visibility: hidden;
 }

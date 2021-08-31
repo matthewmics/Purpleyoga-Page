@@ -17,6 +17,12 @@
 
     <link href="vendor/style.css" rel="stylesheet" />
 
+    <style>
+      .btn-flat {
+        text-transform: none;
+      }
+    </style>
+
     <title>Purple Yoga Hawaii &mdash; Waikiki-Ala Moana, Honolulu</title>
   </head>
   <body>
@@ -33,6 +39,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
+            <div class="hide-on-large-only">Classes</div>
             <ul class="left hide-on-med-and-down">
               <li>
                 <a href="index.html">Home</a>
@@ -94,7 +101,7 @@
           <div class="col s12 m12 l2">
             <a
               href="#ashtanga"
-              class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text button-first-option"
+              class="waves-effect waves-light btn-flat purple-text bold-text button-first-option"
             >
               Ashtanga Mysore
             </a>
@@ -102,7 +109,7 @@
           <div class="col s12 m12 l2">
             <a
               href="#ashtanga-led"
-              class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+              class="waves-effect waves-light btn-flat purple-text bold-text"
             >
               Ashtanga Led
             </a>
@@ -110,7 +117,7 @@
           <div class="col s12 m12 l2">
             <a
               href="#vinyasa"
-              class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+              class="waves-effect waves-light btn-flat purple-text bold-text"
             >
               Vinyasa Flow
             </a>
@@ -118,7 +125,7 @@
           <div class="col s12 m12 l2">
             <a
               href="#pregnancy"
-              class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+              class="waves-effect waves-light btn-flat purple-text bold-text"
             >
               Pregnancy
             </a>
@@ -126,7 +133,7 @@
           <div class="col s12 m12 l2">
             <a
               href="#momnbaby"
-              class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+              class="waves-effect waves-light btn-flat purple-text bold-text"
             >
               Mom &amp; Baby
             </a>
@@ -134,12 +141,13 @@
         </div>
         <div class="row">
           <div class="col s12 l8" id="content">
-            <div class="card" id="ashtanga">
+            <div class="card">
+              <a class="anchor" id="ashtanga"></a>
               <div class="card-image">
                 <img src="assets/photo_ashtanga.jpg" />
               </div>
               <div class="card-content">
-                <div class="card-title purple-text">
+                <div class="card-title purple-text bold-text">
                   Ashtanga Yoga Mysore style
                 </div>
                 <p>
@@ -179,10 +187,10 @@
                   of practice.
                 </p>
               </div>
-            </div>
-            <div class="card" id="ashtanga-led">
+
               <div class="card-content">
-                <div class="card-title purple-text">
+                <a class="anchor" id="ashtanga-led"></a>
+                <div class="card-title purple-text bold-text">
                   Ashtanga Yoga Led class
                 </div>
                 <p>
@@ -206,10 +214,13 @@
                 </p>
               </div>
             </div>
-            <div class="card" id="vinyasa">
+            <div class="card">
+              <a class="anchor" id="vinyasa"></a>
               <div class="card-image"><img src="assets/photo_vin.jpg" /></div>
               <div class="card-content">
-                <div class="card-title purple-text">Vinyasa Flow Yoga</div>
+                <div class="card-title purple-text bold-text">
+                  Vinyasa Flow Yoga
+                </div>
                 <p>
                   Vinyasa Flow Yoga is creative, fluid, challenging and fun. The
                   teacher is free to improvise dynamic sequences drawn from the
@@ -238,12 +249,15 @@
                 </p>
               </div>
             </div>
-            <div class="card" id="pregnancy">
+            <div class="card">
+              <a class="anchor" id="pregnancy"></a>
               <div class="card-image">
                 <img src="assets/photo_pregnancy.jpg" />
               </div>
               <div class="card-content">
-                <div class="card-title purple-text">Pregnancy Yoga</div>
+                <div class="card-title purple-text bold-text">
+                  Pregnancy Yoga
+                </div>
                 <p>
                   Pregnancy is a time of change and celebration, as well as
                   anticipation and anxiety. Yoga brings great awareness to what
@@ -276,10 +290,12 @@
                 <br />
                 <p class="red-text">Get a free DVD with your first class</p>
               </div>
-            </div>
-            <div class="card" id="momnbaby">
+
+              <a class="anchor" id="momnbaby"></a>
               <div class="card-content">
-                <div class="card-title purple-text">Mom &amp; Baby Yoga</div>
+                <div class="card-title purple-text bold-text">
+                  Mom &amp; Baby Yoga
+                </div>
                 <p>
                   Getting back into exercise after giving birth is not easy for
                   many new mothers, who find that just leaving the house is a
@@ -320,7 +336,7 @@
             <div>
               <a
                 href="#ashtanga"
-                class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text button-first-option"
+                class="waves-effect waves-light btn-flat purple-text bold-text button-first-option"
               >
                 Ashtanga Mysore
               </a>
@@ -328,7 +344,7 @@
             <div>
               <a
                 href="#ashtanga-led"
-                class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+                class="waves-effect waves-light btn-flat purple-text bold-text"
               >
                 Ashtanga Led
               </a>
@@ -336,7 +352,7 @@
             <div>
               <a
                 href="#vinyasa"
-                class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+                class="waves-effect waves-light btn-flat purple-text bold-text"
               >
                 Vinyasa Flow
               </a>
@@ -344,7 +360,7 @@
             <div>
               <a
                 href="#pregnancy"
-                class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+                class="waves-effect waves-light btn-flat purple-text bold-text"
               >
                 Pregnancy
               </a>
@@ -352,7 +368,7 @@
             <div>
               <a
                 href="#momnbaby"
-                class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+                class="waves-effect waves-light btn-flat purple-text bold-text"
               >
                 Mom &amp; Baby
               </a>
@@ -403,7 +419,6 @@
     <script src="vendor/script.js"></script>
 
     <script>
-
       var handleScroll = () => {
         window.scrollTo(0, 0);
       };
@@ -423,7 +438,6 @@
             elem.classList.add("hide");
           }
         });
-
       })();
     </script>
   </body>

@@ -21,8 +21,9 @@
       .card-title {
         font-weight: bold !important;
       }
-      .card-image > img {
-        filter: brightness(80%);
+
+      .btn-flat {
+        text-transform: none;
       }
     </style>
 
@@ -42,6 +43,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
+            <div class="hide-on-large-only">Profiles</div>
             <ul class="left hide-on-med-and-down">
               <li>
                 <a href="index.html">Home</a>
@@ -103,15 +105,15 @@
           <div class="col s12 m12 l2">
             <a
               href="#cathy"
-              class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text button-first-option"
+              class="waves-effect waves-light btn-flat purple-text bold-text button-first-option"
             >
-              Cathy Louise
+              Cathy Louise Broda
             </a>
           </div>
           <div class="col s12 m12 l2">
             <a
               href="#glen"
-              class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+              class="waves-effect waves-light btn-flat purple-text bold-text"
             >
               Glen Butcher
             </a>
@@ -119,7 +121,7 @@
           <div class="col s12 m12 l2">
             <a
               href="#yoko"
-              class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+              class="waves-effect waves-light btn-flat purple-text bold-text"
             >
               Yoko Fujiwara
             </a>
@@ -127,7 +129,7 @@
           <div class="col s12 m12 l2">
             <a
               href="#gene"
-              class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+              class="waves-effect waves-light btn-flat purple-text bold-text"
             >
               Gene Horita
             </a>
@@ -135,12 +137,14 @@
         </div>
         <div class="row">
           <div class="col s12 l8">
-            <div class="card" id="cathy">
+            <div class="card">
+              <a class="anchor" id="cathy"></a>
               <div class="card-image">
                 <img src="assets/photo_cathy.jpg" />
-                <div class="card-title white-text">Cathy Louise Broda</div>
               </div>
               <div class="card-content">
+                
+                <div class="card-title purple-text bold-text">Cathy Louise Broda</div>
                 <p>
                   Cathy Louise has been teaching Ashtanga Yoga for 31 years. Her
                   first teacher was Beryl Bender Birch, who she did a two-year
@@ -172,12 +176,14 @@
                 <p>
                   Watch and listen to interviews with Cathy Louise on the
                   <a
+                    class="purple-text"
                     target="_blank"
                     href="https://www.youtube.com/watch?v=oUPb4buLCG4"
                     >Kwok Talk</a
                   >
                   show and the
                   <a
+                    class="purple-text"
                     target="_blank"
                     href="http://www.ashtangadispatch.com/podcast-episode-22-cathy-louise-broda/"
                     >Ashtanga Dispatch</a
@@ -186,12 +192,13 @@
                 </p>
               </div>
             </div>
-            <div class="card" id="glen">
+            <div class="card">
+              <a class="anchor" id="glen"></a>
               <div class="card-image">
                 <img src="assets/photo_glen.jpg" />
-                <div class="card-title white-text">Glen Butcher</div>
               </div>
               <div class="card-content">
+                <div class="card-title purple-text bold-text">Glen Butcher</div>
                 <p>
                   Glen has been practicing yoga for 33 years and teaching for 23
                   years. Originally from New Zealand, Glen's foundation in yoga
@@ -223,12 +230,13 @@
                 </p>
               </div>
             </div>
-            <div class="card" id="yoko">
+            <div class="card">
+              <a class="anchor" id="yoko"></a>
               <div class="card-image">
                 <img src="assets/photo_yoko.jpg" />
-                <div class="card-title white-text">Yoko Fujiwara</div>
               </div>
               <div class="card-content">
+                <div class="card-title purple-text bold-text">Yoko Fujiwara</div>
                 <p>
                   Yoko started her Ashtanga Yoga practice in her hometown Tokyo
                   in 2003. She has been teaching Ashtanga in Honolulu for the
@@ -255,18 +263,22 @@
                   primarily due to the process of deep self-reflection and
                   actively changing patterns rooted in fear, anger and
                   insecurity.
-                  <a href="http://www.ashtangayoko.com/" target="_blank"
+                  <a
+                    class="purple-text"
+                    href="http://www.ashtangayoko.com/"
+                    target="_blank"
                     >www.ashtangayoko.com</a
                   >
                 </p>
               </div>
             </div>
-            <div class="card" id="gene">
+            <div class="card">              
+              <a class="anchor" id="gene"></a>
               <div class="card-image">
                 <img src="assets/photo_gene2.jpg" />
-                <div class="card-title white-text">Gene Horita</div>
               </div>
               <div class="card-content">
+                <div class="card-title purple-text bold-text">Gene Horita</div>
                 <p>
                   Gene's journey into yoga began as a continuation of movement
                   exploration after he graduated with a Master of Fine Arts in
@@ -308,15 +320,15 @@
             <div>
               <a
                 href="#cathy"
-                class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text button-first-option"
+                class="waves-effect waves-light btn-flat purple-text bold-text button-first-option"
               >
-                Cathy Louise
+                Cathy Louise Broda
               </a>
             </div>
             <div>
               <a
                 href="#glen"
-                class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+                class="waves-effect waves-light btn-flat purple-text bold-text"
               >
                 Glen Butcher
               </a>
@@ -324,7 +336,7 @@
             <div>
               <a
                 href="#yoko"
-                class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+                class="waves-effect waves-light btn-flat purple-text bold-text"
               >
                 Yoko Fujiwara
               </a>
@@ -332,7 +344,7 @@
             <div>
               <a
                 href="#gene"
-                class="waves-effect waves-light btn-flat purple lighten-5 grey-text bold-text"
+                class="waves-effect waves-light btn-flat purple-text bold-text"
               >
                 Gene Horita
               </a>

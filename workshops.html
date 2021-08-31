@@ -19,6 +19,22 @@
       .collection {
         border: 0px;
       }
+
+      .collection-header,
+      .collection-item {
+        border-bottom: none !important;
+      }
+
+      .list-bulleted:not(.browser-default) {
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+
+      .list-bulleted:not(.browser-default) li:not(.collection-header) {
+        list-style-type: disc;
+        margin-top: 10px;
+        list-style-position: inside;
+      }
     </style>
 
     <link href="vendor/style.css" rel="stylesheet" />
@@ -39,6 +55,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
+            <div class="hide-on-large-only">Workshops</div>
             <ul class="left hide-on-med-and-down">
               <li>
                 <a href="index.html">Home</a>
@@ -97,11 +114,11 @@
           <div class="col s12 m12 l6">
             <ul class="collection with-header">
               <li class="collection-header">
-                <h5 class="purple-text">
+                <h5 class="purple-text bold-text">
                   Ashtanga Yoga Training: Mastering Mysore Practice
                 </h5>
               </li>
-              <li class="collection-item">
+              <li class="collection-item" style="padding-top: 0px">
                 <span class="purple-text"
                   >May 22–25, 2020 with Cathy Louise Broda and Glen Butcher Fri,
                   Sun, Mon 9:00–11:30am, 1:00–2:30pm and 3:00–4:30pm Sat
@@ -135,40 +152,45 @@
             <ul class="collection with-header">
               <li class="collection-header">
                 <h5>We’ll teach you how to:</h5>
-              </li>
-              <li class="collection-item">
-                practice for different stages of life for women and men
-              </li>
-              <li class="collection-item">
-                modify practice for pain, injuries and physical disabilities
-              </li>
-              <li class="collection-item">
-                see the effects of emotional and mental health on practice
-              </li>
-              <li class="collection-item">
-                interpret both corrective and enhancing hands-on adjustments
-              </li>
-              <li class="collection-item">
-                cultivate self-evaluation so you can be your own best guide.
+                <ul class="list-bulleted grey-text">
+                  <li>
+                    practice for different stages of life for women and men
+                  </li>
+                  <li>
+                    modify practice for pain, injuries and physical disabilities
+                  </li>
+                  <li>
+                    see the effects of emotional and mental health on practice
+                  </li>
+                  <li>
+                    interpret both corrective and enhancing hands-on adjustments
+                  </li>
+                  <li>
+                    cultivate self-evaluation so you can be your own best guide.
+                  </li>
+                </ul>
               </li>
             </ul>
             <ul class="collection with-header">
               <li class="collection-header">
                 <h5>We’ll also explore the:</h5>
+                <ul class="list-bulleted grey-text">
+                  <li>
+                    tools of practice: drishti, bandhas, breath, asana and
+                    vinyasa
+                  </li>
+                  <li>
+                    evolution of Ashtanga Yoga and its influence on yoga today
+                  </li>
+                  <li>
+                    rules and restrictions surrounding the practice of Ashtanga
+                  </li>
+                  <li>
+                    recommended resources for study: books, videos, websites
+                  </li>
+                  <li>joy of practice.</li>
+                </ul>
               </li>
-              <li class="collection-item">
-                tools of practice: drishti, bandhas, breath, asana and vinyasa
-              </li>
-              <li class="collection-item">
-                evolution of Ashtanga Yoga and its influence on yoga today
-              </li>
-              <li class="collection-item">
-                rules and restrictions surrounding the practice of Ashtanga
-              </li>
-              <li class="collection-item">
-                recommended resources for study: books, videos, websites
-              </li>
-              <li class="collection-item">joy of practice.</li>
             </ul>
           </div>
           <div class="col s12 m12 l6">
@@ -176,10 +198,10 @@
               <div class="card-image">
                 <img src="assets/photo_ponytail.jpg" />
               </div>
-              <div class="card-content">
+              <div class="card-content grey-text">
                 <p>
-                  <a href="profiles.html#cathy">Cathy Louise</a> and
-                  <a href="profiles.html#glen">Glen</a> have 50 years combined
+                  <a class="purple-text" href="profiles.html#cathy">Cathy Louise</a> and
+                  <a class="purple-text" href="profiles.html#glen">Glen</a> have 50 years combined
                   teaching experience. All levels of Ashtanga practitioners are
                   welcome to this training, including beginners. Everyone has a
                   story of practice, a narrative interwoven with experience of
@@ -196,13 +218,13 @@
                 <br />
                 <p>
                   All classes are at
-                  <a href="location.html">Purple Yoga Hawaii</a>. Enquiries
+                  <a class="purple-text" href="location.html">Purple Yoga Hawaii</a>. Enquiries
                   info@purpleyoga.com or text/phone (808) 944-8585.
                 </p>
                 <br />
                 <blockquote
                   class="grey-text c4-div"
-                  style="font-weight: bold; font-size: 12px"
+                  style="font-weight: bold; font-size: 12px; border-left: 5px solid #639 !important;"
                 >
                   <p>
                     Space is limited, please register early to secure your

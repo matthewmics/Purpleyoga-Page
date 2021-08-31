@@ -17,6 +17,17 @@
 
     <link href="vendor/style.css" rel="stylesheet" />
 
+    <style>
+      .button-weekend {
+        width: 450px;
+      }
+      @media only screen and (max-width: 800px) {
+        .button-weekend {
+          width: 100%;
+        }
+      }
+    </style>
+
     <title>Purple Yoga Hawaii &mdash; Waikiki-Ala Moana, Honolulu</title>
   </head>
   <body>
@@ -162,6 +173,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
+            <div class="hide-on-large-only">Schedule</div>
             <ul class="left hide-on-med-and-down">
               <li>
                 <a href="index.html">Home</a>
@@ -687,19 +699,16 @@
                           <a
                             style="color: white !important"
                             target="_blank"
-                            class="btn blue"
+                            class="btn blue button-weekend"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSd5EyxpXvbxRVpW0cYj2NqhGz1xco-xwngti3ue-HGG1Xp6OQ/viewform"
                           >
                             Sign up for weekend in-person classes
                           </a>
-                        </td>
-                      </tr>
 
-                      <tr>
-                        <td colspan="3">
+                          <br />
                           <a
                             style="color: white !important"
-                            class="btn blue"
+                            class="btn blue button-weekend"
                             target="_blank"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSf960_JLOWgcLXc76kZs586yw-1piwbdeDoUSZocO-SK44nBA/viewform"
                           >
@@ -779,18 +788,16 @@
                           <a
                             style="color: white !important"
                             target="_blank"
-                            class="btn blue"
+                            class="btn blue button-weekend"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSd5EyxpXvbxRVpW0cYj2NqhGz1xco-xwngti3ue-HGG1Xp6OQ/viewform"
                           >
                             Sign up for weekend in-person classes
                           </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="3">
+
+                          <br />
                           <a
                             style="color: white !important"
-                            class="btn blue"
+                            class="btn blue button-weekend"
                             target="_blank"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSf960_JLOWgcLXc76kZs586yw-1piwbdeDoUSZocO-SK44nBA/viewform"
                           >
@@ -817,7 +824,7 @@
               <button
                 form="first-class-k-10"
                 type="submit"
-                class="waves-effect waves-light btn purple"
+                class="waves-effect waves-light btn purple lighten-1 white-text"
               >
                 First class Kama'aina $10
               </button>
@@ -826,7 +833,7 @@
               <button
                 form="first-class-zoom-10"
                 type="submit"
-                class="waves-effect waves-light btn purple"
+                class="waves-effect waves-light btn purple lighten-1 white-text"
               >
                 First class Zoom $10
               </button>
@@ -835,7 +842,7 @@
               <button
                 form="single-class-22"
                 type="submit"
-                class="waves-effect waves-light btn purple"
+                class="waves-effect waves-light btn purple lighten-1 white-text"
               >
                 Single class $22</button
               ><span>no expiration! no refunds</span>
@@ -844,7 +851,7 @@
               <button
                 form="five-classes-95"
                 type="submit"
-                class="waves-effect waves-light btn purple"
+                class="waves-effect waves-light btn purple lighten-1 white-text"
               >
                 5 classes $95
               </button>
@@ -853,7 +860,7 @@
               <button
                 form="ten-classes-160"
                 type="submit"
-                class="waves-effect waves-light btn purple"
+                class="waves-effect waves-light btn purple lighten-1 white-text"
               >
                 10 classes $160</button
               ><span>no expiration! no refunds, no transfers</span>
@@ -862,7 +869,7 @@
               <button
                 form="one-month-unlimited-classes-200"
                 type="submit"
-                class="waves-effect waves-light btn purple"
+                class="waves-effect waves-light btn purple lighten-1 white-text"
               >
                 1 month unlimited $200</button
               ><span>no expiration! no refunds, no transfers</span>
@@ -881,44 +888,49 @@
         <!-- END OF BUTTONS FOR FORM -->
         <!--  -->
 
-        <div class="row grey-text" style="font-size: 18px">
-          <div class="col m4 l4 s12 center">
-            <div>New students please complete the registration form.</div>
-            <a
-              id="button-flashing"
-              target="_blank"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdNUvKSp-GIxrBetxMvKDT4H8ix89Jyiq668W4W-zdvg_9STQ/viewform"
-              class="btn blue pulse"
-              >REGISTRATION FORM</a
-            >
+        <div class="row grey-text">
+          <div class="col s12 m6 center">
+            <div>
+              <div>New students please complete the registration form.</div>
+              <a
+                id="button-flashing"
+                style="font-size: 11px"
+                target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdNUvKSp-GIxrBetxMvKDT4H8ix89Jyiq668W4W-zdvg_9STQ/viewform"
+                class="btn blue pulse"
+                >REGISTRATION FORM</a
+              >
+
+              <div style="margin-top: 15px">
+                <span
+                  >Please bring a yoga mat and a small towel. You may store your
+                  mat on shelves at the studio.</span
+                >
+              </div>
+
+              <div style="margin-top: 15px">
+                <span
+                  >Mysore cotton rugs imported from India for sale at the studio
+                  or<a class="purple-text" href="shop.html">&nbsp;online</a>.
+                  Manduka Pro mats are out of stock.</span
+                >
+              </div>
+            </div>
           </div>
-          <div class="col m4 l4 s12 center m-mobile">
-            <span
-              >Please bring a yoga mat and a small towel. You may store your mat
-              on shelves at the studio.</span
-            >
-          </div>
-          <div class="col m4 l4 s12 center m-mobile">
-            <span
-              >Mysore cotton rugs imported from India for sale at the studio
-              or<a class="purple-text" href="shop.html">&nbsp;online</a>.
-              Manduka Pro mats are out of stock.</span
-            >
-          </div>
-        </div>
-        <div class="row grey-text" style="font-size: 18px">
-          <div class="col m6 l6 s12 center">
-            <span
-              >Private lessons available by arrangement at the studio. $80 for
-              60 minutes, $100 for 75 minutes, $120 for 90 minutes. Add $20 for
-              a lesson in your home or hotel.</span
-            >
-          </div>
-          <div class="col m6 l6 s12 center m-mobile">
-            <span
-              >To gift classes (left) put "gift" in the message field; we'll
-              contact you for delivery.</span
-            >
+          <div class="col s12 m6 center m-mobile">
+            <div>
+              <span
+                >Private lessons available by arrangement at the studio. $80 for
+                60 minutes, $100 for 75 minutes, $120 for 90 minutes. Add $20
+                for a lesson in your home or hotel.</span
+              >
+            </div>
+            <div style="margin-top: 15px">
+              <span
+                >To gift classes (left) put "gift" in the message field; we'll
+                contact you for delivery.</span
+              >
+            </div>
           </div>
         </div>
       </div>
