@@ -3,7 +3,7 @@ let container;
 
 function handleResize() {
   const w = window.innerWidth;
-  if (window.scrollY > 100) {    
+  if (window.scrollY > 90) {    
     navlogo.classList.remove("logo-tablet", "logo-desktop");
     navlogo.classList.add("logo-nav");
     container.style.paddingTop = "0px";
