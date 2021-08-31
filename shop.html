@@ -17,6 +17,16 @@
 
     <link href="vendor/style.css" rel="stylesheet" />
 
+    <style>
+      .card-title {
+        font-weight: bold !important;
+      }
+
+      .btn-flat {
+        text-transform: none;
+      }
+    </style>
+
     <title>Purple Yoga Hawaii &mdash; Waikiki-Ala Moana, Honolulu</title>
   </head>
   <body>
@@ -191,14 +201,45 @@
 
     <main>
       <div class="container" id="con">
+        <div
+          class="row buttons-option hide-on-large-only"
+          style="padding-top: 2em"
+        >
+          <div class="col s12 m12 l2">
+            <a
+              href="#canvas-tote"
+              class="waves-effect waves-light btn-flat purple-text bold-text button-first-option"
+            >
+              Canvas Tote Bag
+            </a>
+          </div>
+          <div class="col s12 m12 l2">
+            <a
+              href="#tenugui"
+              class="waves-effect waves-light btn-flat purple-text bold-text"
+            >
+              Tenugui Towel
+            </a>
+          </div>
+          <div class="col s12 m12 l2">
+            <a
+              href="#order"
+              class="waves-effect waves-light btn-flat purple-text bold-text"
+            >
+              To Order
+            </a>
+          </div>
+        </div>
+
         <div class="row">
-          <div class="col m6">
+          <div class="col s12 l8">
             <div class="card">
+              <a class="anchor" id="canvas-tote"></a>
               <div class="card-image">
-                <img src="assets/photo_tote.jpg" style="height: 350px" />
+                <img src="assets/photo_tote.jpg" />
               </div>
               <div class="card-content card-content-shop">
-                <span class="card-title" style="font-weight: bold"
+                <span class="card-title purple-text bold"
                   >Canvas Tote Bag $24</span
                 >
                 <p>
@@ -207,14 +248,14 @@
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col m6">
+
             <div class="card">
+              <a class="anchor" id="tenugui"></a>
               <div class="card-image">
-                <img src="assets/photo_tenugui.jpg" style="height: 350px" />
+                <img src="assets/photo_tenugui.jpg" />
               </div>
               <div class="card-content card-content-shop">
-                <span class="card-title" style="font-weight: bold"
+                <span class="card-title purple-text bold"
                   >Tenugui Towel $18</span
                 >
                 <p>
@@ -226,14 +267,12 @@
                 </p>
               </div>
             </div>
-          </div>
-          <div class="col l8 offset-l2">
-            <ul
-              class="collection with-header"
-            >
+
+            <ul class="collection with-header">
+              <a class="anchor" id="order"></a>
               <li class="collection-header purple lighten-5">
-                <h5 class="black-text">
-                  <i class="material-icons">shopping_cart</i>TO ORDER
+                <h5 class="purple-text bold-text">
+                  <i class="material-icons">shopping_cart</i>To Order
                 </h5>
               </li>
               <li class="collection-item purple lighten-5">
@@ -293,6 +332,45 @@
               <!--  -->
             </ul>
           </div>
+
+          <div
+            class="col l4 buttons-option hide-on-med-and-down"
+            style="padding-top: 1em"
+          >
+            <div>
+              <a
+                href="#canvas-tote"
+                class="waves-effect waves-light btn-flat purple-text bold-text button-first-option"
+              >
+                Canvas Tote Bag
+              </a>
+            </div>
+            <div>
+              <a
+                href="#tenugui"
+                class="waves-effect waves-light btn-flat purple-text bold-text"
+              >
+                Tenugui Towel
+              </a>
+            </div>
+            <div>
+              <a
+                href="#order"
+                class="waves-effect waves-light btn-flat purple-text bold-text"
+              >
+                To Order
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fixed-action-btn hide" style="margin-bottom: 27px">
+          <a
+            class="btn-floating btn-large purple darken-4"
+            onclick="handleScroll()"
+          >
+            <i class="material-icons">arrow_upward</i>
+          </a>
         </div>
       </div>
     </main>
@@ -330,39 +408,57 @@
     <script src="vendor/script.js"></script>
 
     <script>
-      var cardContents;
-      var baseCard;
-      var con;
-      var handleCardContent = () => {
-        if (window.innerWidth <= 600) {
-          Array.prototype.forEach.call(cardContents, function (node) {
-            node.style.height = "auto";
-          });
-          return;
-        }
+      var elem = document.querySelector(".fixed-action-btn");
+      document.addEventListener("DOMContentLoaded", function () {
+        var instances = M.FloatingActionButton.init(elem, {});
+      });
 
-        var newHeight = 0;
-        if (baseCard === undefined) {
-          Array.prototype.forEach.call(cardContents, function (node) {
-            if (newHeight < node.offsetHeight) {
-              baseCard = node;
-              newHeight = node.offsetHeight;
-            }
-          });
+      window.addEventListener("scroll", (ev) => {
+        if (!elem) return;
+        if (window.scrollY >= 200) {
+          elem.classList.remove("hide");
+        } else {
+          elem.classList.add("hide");
         }
-        Array.prototype.forEach.call(cardContents, function (node) {
-          if (baseCard === node) return;
-          node.style.height = baseCard.offsetHeight + "px";
-        });
+      });
+
+      var handleScroll = () => {
+        window.scrollTo(0, 0);
       };
-      (function () {
-        cardContents = document.querySelectorAll(".card-content");
-        con = document.getElementById("con");
-        handleCardContent();
-        window.addEventListener("resize", () => {
-          handleCardContent();
-        });
-      })();
+
+      // var cardContents;
+      // var baseCard;
+      // var con;
+      // var handleCardContent = () => {
+      //   if (window.innerWidth <= 600) {
+      //     Array.prototype.forEach.call(cardContents, function (node) {
+      //       node.style.height = "auto";
+      //     });
+      //     return;
+      //   }
+
+      //   var newHeight = 0;
+      //   if (baseCard === undefined) {
+      //     Array.prototype.forEach.call(cardContents, function (node) {
+      //       if (newHeight < node.offsetHeight) {
+      //         baseCard = node;
+      //         newHeight = node.offsetHeight;
+      //       }
+      //     });
+      //   }
+      //   Array.prototype.forEach.call(cardContents, function (node) {
+      //     if (baseCard === node) return;
+      //     node.style.height = baseCard.offsetHeight + "px";
+      //   });
+      // };
+      // (function () {
+      //   cardContents = document.querySelectorAll(".card-content");
+      //   con = document.getElementById("con");
+      //   handleCardContent();
+      //   window.addEventListener("resize", () => {
+      //     handleCardContent();
+      //   });
+      // })();
     </script>
   </body>
 </html>
