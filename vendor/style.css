@@ -3,7 +3,18 @@
   margin: 15px 10px 0px 0px;
 }
 
-.purple-text, #collapsible-schedule a {
+.logo-tablet {
+  height: 90px;
+  margin: 0px 0px 0px 0px;
+}
+
+.logo-nav {
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+}
+
+.purple-text,
+#collapsible-schedule a {
   color: #639 !important;
 }
 
@@ -11,17 +22,12 @@
   color: #666 !important;
 }
 
-.logo-tablet {
-  height: 90px;
-  margin: 0px 0px 0px 0px;
-}
-
 blockquote {
   border: 0px !important;
 }
 
 #logo {
-  transition: height 0.5s, width 0.55s;
+  transition: height 0.25s, width 0.25s, margin 0.25s;
 }
 
 main > *:first-child {
