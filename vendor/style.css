@@ -4,7 +4,7 @@
 }
 
 .logo-tablet {
-  height: 90px;
+  height: 95px;
   margin: 0px 0px 0px 0px;
 }
 
@@ -31,7 +31,7 @@ blockquote {
 }
 
 main > *:first-child {
-  transition: padding-top 0.5s;
+  transition: padding-top 1s;
 }
 
 .icon-img {
