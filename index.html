@@ -24,11 +24,17 @@
         right: 15px;
         bottom: 15px;
       }
+      #quote-right {
+        text-align: right;
+      }
       @media only screen and (max-width: 600px) {
         #image-title {
           font-size: 18px;
           right: 10px;
           bottom: 10px;
+        }
+        #quote-right {
+          text-align: left;
         }
       }
     </style>
@@ -49,7 +55,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
-            
+
             <div class="hide-on-large-only">Home</div>
             <ul class="left hide-on-med-and-down">
               <li class="active">
@@ -121,7 +127,9 @@
             <div class="card">
               <div class="card-image">
                 <img src="assets/photo_index.jpg" />
-                <b id="image-title" class="purple-text text-lighten-5">Purple Yoga Hawaii</b>
+                <b id="image-title" class="purple-text text-lighten-5"
+                  >Purple Yoga Hawaii</b
+                >
               </div>
               <div class="card-content">
                 <p class="purple-text">
@@ -152,7 +160,11 @@
             </p>
           </div>
           <div class="col s6">
-            <p class="right grey-text" style="max-width: 350px; text-align: right;">
+            <p
+              class="right grey-text"
+              style="max-width: 350px"
+              id="quote-right"
+            >
               "I think it pisses God off if you walk by the color purple in a
               field somewhere and don't notice it." <br /><span
                 class="purple-text"
