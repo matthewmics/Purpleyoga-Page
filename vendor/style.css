@@ -31,7 +31,7 @@ blockquote {
 }
 
 main > *:first-child {
-  transition: padding-top 1s;
+  transition: padding-top 0.25s;
 }
 
 .icon-img {
@@ -133,6 +133,6 @@ main {
 a.anchor {
   display: block;
   position: relative;
-  top: -83px;
+  top: -90px;
   visibility: hidden;
 }
