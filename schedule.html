@@ -151,13 +151,13 @@
 
     <header>
       <div class="navbar-fixed">
-        <nav class="purple darken-4">
+        <nav class="purple darken-3">
           <div class="nav-wrapper">
             <img
               src="assets/logo.gif"
               alt="logo"
-              class="brand-logo hide"
-              style="height: 100%"
+              id="logo"
+              class="brand-logo right z-depth-3 logo-desktop"
             />
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
               <i class="material-icons">menu</i>
@@ -217,7 +217,7 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="row" style="margin: 0;">
+          <div class="row" style="margin: 0">
             <blockquote class="red-text">
               Drop-ins okay for Mysore classes only. Sign up required for
               weekend led classes. Zoom option for weekend classes. Masks are
@@ -227,24 +227,26 @@
           </div>
         </div>
         <div class="row">
-          
-          <h6 class="grey-text center" style="font-style: italic; font-size: 14px;">
-            Click the class or teacher names for more information. Door opens
-            15 minutes before start time.
+          <h6
+            class="grey-text center"
+            style="font-style: italic; font-size: 14px"
+          >
+            Click the class or teacher names for more information. Door opens 15
+            minutes before start time.
           </h6>
           <div class="col l12 m12 s12 xl12">
-            <ul class="collapsible expandable">
+            <ul class="collapsible expandable" id="collapsible-schedule">
               <li class="active">
                 <div class="collapsible-header" tabindex="0">
                   <i class="material-icons">date_range</i>MONDAY
                 </div>
                 <div class="collapsible-body" style="display: block">
-                  <table class="striped centered">
+                  <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
                         <th>Class</th>
+                        <th>Time</th>
                         <th>Teacher(s)</th>
-                        <th>-</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -252,6 +254,11 @@
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >6:00–10:00am flexible start time</span
                           >
                         </td>
                         <td>
@@ -274,18 +281,16 @@
                             </li>
                           </ul>
                         </td>
-                        <td>
-                          <span class="grey-text"
-                            >6:00–10:00am flexible start time</span
-                          ><br /><span style="color: red; font-size: 11px"
-                            >Aug 23 8–10am only</span
-                          >
-                        </td>
                       </tr>
                       <tr>
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >4:30–7:30pm flexible start time</span
                           >
                         </td>
                         <td>
@@ -299,11 +304,6 @@
                               >
                             </li>
                           </ul>
-                        </td>
-                        <td>
-                          <span class="grey-text"
-                            >4:30–7:30pm flexible start time</span
-                          >
                         </td>
                       </tr>
                     </tbody>
@@ -315,12 +315,12 @@
                   <i class="material-icons">date_range</i>TUESDAY
                 </div>
                 <div class="collapsible-body">
-                  <table class="striped centered">
+                  <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
                         <th>Class</th>
+                        <th>Time</th>
                         <th>Teacher(s)</th>
-                        <th>-</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -328,6 +328,11 @@
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >6:00–10:00am flexible start time</span
                           >
                         </td>
                         <td>
@@ -350,13 +355,6 @@
                             </li>
                           </ul>
                         </td>
-                        <td>
-                          <span class="grey-text"
-                            >6:00–10:00am flexible start time</span
-                          ><br /><span style="color: red; font-size: 11px"
-                            >Aug 24 8–10am only</span
-                          >
-                        </td>
                       </tr>
                       <tr>
                         <td>
@@ -364,6 +362,7 @@
                             >Mom &amp; Baby</a
                           >
                         </td>
+                        <td><span class="grey-text">11:00am–12:15pm</span></td>
                         <td>
                           <ul class="collection">
                             <li
@@ -376,12 +375,16 @@
                             </li>
                           </ul>
                         </td>
-                        <td><span class="grey-text">11:00am–12:15pm</span></td>
                       </tr>
                       <tr>
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >4:30–7:30pm flexible start time</span
                           >
                         </td>
                         <td>
@@ -395,11 +398,6 @@
                               >
                             </li>
                           </ul>
-                        </td>
-                        <td>
-                          <span class="grey-text"
-                            >4:30–7:30pm flexible start time</span
-                          >
                         </td>
                       </tr>
                     </tbody>
@@ -411,12 +409,12 @@
                   <i class="material-icons">date_range</i>WEDNESDAY
                 </div>
                 <div class="collapsible-body">
-                  <table class="striped centered">
+                  <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
                         <th>Class</th>
+                        <th>Time</th>
                         <th>Teacher(s)</th>
-                        <th>-</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -424,6 +422,11 @@
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >6:00–10:00am flexible start time</span
                           >
                         </td>
                         <td>
@@ -446,16 +449,16 @@
                             </li>
                           </ul>
                         </td>
-                        <td>
-                          <span class="grey-text"
-                            >6:00–10:00am flexible start time</span
-                          >
-                        </td>
                       </tr>
                       <tr>
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >4:30–7:30pm flexible start time</span
                           >
                         </td>
                         <td>
@@ -469,11 +472,6 @@
                               >
                             </li>
                           </ul>
-                        </td>
-                        <td>
-                          <span class="grey-text"
-                            >4:30–7:30pm flexible start time</span
-                          >
                         </td>
                       </tr>
                     </tbody>
@@ -485,12 +483,12 @@
                   <i class="material-icons">date_range</i>THURSDAY
                 </div>
                 <div class="collapsible-body">
-                  <table class="striped centered">
+                  <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
                         <th>Class</th>
+                        <th>Time</th>
                         <th>Teacher(s)</th>
-                        <th>-</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -498,6 +496,11 @@
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >6:00–10:00am flexible start time</span
                           >
                         </td>
                         <td>
@@ -520,16 +523,16 @@
                             </li>
                           </ul>
                         </td>
-                        <td>
-                          <span class="grey-text"
-                            >6:00–10:00am flexible start time</span
-                          >
-                        </td>
                       </tr>
                       <tr>
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >4:30–7:30pm flexible start time</span
                           >
                         </td>
                         <td>
@@ -543,11 +546,6 @@
                               >
                             </li>
                           </ul>
-                        </td>
-                        <td>
-                          <span class="grey-text"
-                            >4:30–7:30pm flexible start time</span
-                          >
                         </td>
                       </tr>
                     </tbody>
@@ -559,12 +557,12 @@
                   <i class="material-icons">date_range</i>FRIDAY
                 </div>
                 <div class="collapsible-body">
-                  <table class="striped centered">
+                  <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
                         <th>Class</th>
+                        <th>Time</th>
                         <th>Teacher(s)</th>
-                        <th>-</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -572,6 +570,11 @@
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >6:00–10:00am flexible start time</span
                           >
                         </td>
                         <td>
@@ -594,18 +597,16 @@
                             </li>
                           </ul>
                         </td>
-                        <td>
-                          <span class="grey-text"
-                            >6:00–10:00am flexible start time</span
-                          ><br /><span style="color: red; font-size: 11px"
-                            >Aug 20 8–10am only</span
-                          >
-                        </td>
                       </tr>
                       <tr>
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >4:30–7:30pm flexible start time</span
                           >
                         </td>
                         <td>
@@ -620,11 +621,6 @@
                             </li>
                           </ul>
                         </td>
-                        <td>
-                          <span class="grey-text"
-                            >4:30–7:30pm flexible start time</span
-                          >
-                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -635,12 +631,12 @@
                   <i class="material-icons">date_range</i>SATURDAY
                 </div>
                 <div class="collapsible-body">
-                  <table class="striped centered">
+                  <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
                         <th>Class</th>
+                        <th>Time</th>
                         <th>Teacher(s)</th>
-                        <th>-</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -651,6 +647,9 @@
                           >
                         </td>
                         <td>
+                          <span class="grey-text">Level Two 7:30–8:45am</span>
+                        </td>
+                        <td>
                           <ul class="collection">
                             <li
                               class="collection-item"
@@ -661,12 +660,6 @@
                               >
                             </li>
                           </ul>
-                        </td>
-                        <td>
-                          <span class="grey-text">Level Two 7:30–8:45am</span
-                          ><br /><span style="color: red; font-size: 11px"
-                            >No Vinyasa Aug 21</span
-                          >
                         </td>
                       </tr>
                       <tr>
@@ -675,6 +668,7 @@
                             >Pregnancy</a
                           >
                         </td>
+                        <td><span class="grey-text">9:00–10:15am</span></td>
                         <td>
                           <ul class="collection">
                             <li
@@ -687,16 +681,29 @@
                             </li>
                           </ul>
                         </td>
-                        <td><span class="grey-text">9:00–10:15am</span></td>
                       </tr>
                       <tr>
                         <td colspan="3">
                           <a
+                            style="color: white !important"
                             target="_blank"
                             class="btn blue"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSd5EyxpXvbxRVpW0cYj2NqhGz1xco-xwngti3ue-HGG1Xp6OQ/viewform"
                           >
                             Sign up for weekend in-person classes
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="3">
+                          <a
+                            style="color: white !important"
+                            class="btn blue"
+                            target="_blank"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSf960_JLOWgcLXc76kZs586yw-1piwbdeDoUSZocO-SK44nBA/viewform"
+                          >
+                            Sign-up for weekend Zoom classes
                           </a>
                         </td>
                       </tr>
@@ -709,12 +716,12 @@
                   <i class="material-icons">date_range</i>SUNDAY
                 </div>
                 <div class="collapsible-body">
-                  <table class="striped centered">
+                  <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
                         <th>Class</th>
+                        <th>Time</th>
                         <th>Teacher(s)</th>
-                        <th>-</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -722,6 +729,11 @@
                         <td>
                           <a href="classes.html#ashtanga" class="link-text"
                             >Ashtanga Mysore style</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >6:00–9:00am flexible start time</span
                           >
                         </td>
                         <td>
@@ -736,18 +748,16 @@
                             </li>
                           </ul>
                         </td>
-                        <td>
-                          <span class="grey-text"
-                            >6:00–9:00am flexible start time</span
-                          ><br /><span style="color: red; font-size: 11px"
-                            >No Mysore Aug 22</span
-                          >
-                        </td>
                       </tr>
                       <tr>
                         <td>
                           <a href="classes.html#ashtanga-led" class="link-text"
                             >Ashtanga Led class</a
+                          >
+                        </td>
+                        <td>
+                          <span class="grey-text"
+                            >Full Primary 10:30am–12:00pm</span
                           >
                         </td>
                         <td>
@@ -762,15 +772,24 @@
                             </li>
                           </ul>
                         </td>
-                        <td>
-                          <span class="grey-text"
-                            >Full Primary 10:30am–12:00pm</span
+                      </tr>
+
+                      <tr>
+                        <td colspan="3">
+                          <a
+                            style="color: white !important"
+                            target="_blank"
+                            class="btn blue"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSd5EyxpXvbxRVpW0cYj2NqhGz1xco-xwngti3ue-HGG1Xp6OQ/viewform"
                           >
+                            Sign up for weekend in-person classes
+                          </a>
                         </td>
                       </tr>
                       <tr>
                         <td colspan="3">
                           <a
+                            style="color: white !important"
                             class="btn blue"
                             target="_blank"
                             href="https://docs.google.com/forms/d/e/1FAIpQLSf960_JLOWgcLXc76kZs586yw-1piwbdeDoUSZocO-SK44nBA/viewform"
@@ -798,7 +817,7 @@
               <button
                 form="first-class-k-10"
                 type="submit"
-                class="waves-effect waves-light btn"
+                class="waves-effect waves-light btn purple"
               >
                 First class Kama'aina $10
               </button>
@@ -807,7 +826,7 @@
               <button
                 form="first-class-zoom-10"
                 type="submit"
-                class="waves-effect waves-light btn"
+                class="waves-effect waves-light btn purple"
               >
                 First class Zoom $10
               </button>
@@ -816,7 +835,7 @@
               <button
                 form="single-class-22"
                 type="submit"
-                class="waves-effect waves-light btn"
+                class="waves-effect waves-light btn purple"
               >
                 Single class $22</button
               ><span>no expiration! no refunds</span>
@@ -825,7 +844,7 @@
               <button
                 form="five-classes-95"
                 type="submit"
-                class="waves-effect waves-light btn"
+                class="waves-effect waves-light btn purple"
               >
                 5 classes $95
               </button>
@@ -834,7 +853,7 @@
               <button
                 form="ten-classes-160"
                 type="submit"
-                class="waves-effect waves-light btn"
+                class="waves-effect waves-light btn purple"
               >
                 10 classes $160</button
               ><span>no expiration! no refunds, no transfers</span>
@@ -843,7 +862,7 @@
               <button
                 form="one-month-unlimited-classes-200"
                 type="submit"
-                class="waves-effect waves-light btn"
+                class="waves-effect waves-light btn purple"
               >
                 1 month unlimited $200</button
               ><span>no expiration! no refunds, no transfers</span>
@@ -866,6 +885,7 @@
           <div class="col m4 l4 s12 center">
             <div>New students please complete the registration form.</div>
             <a
+              id="button-flashing"
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSdNUvKSp-GIxrBetxMvKDT4H8ix89Jyiq668W4W-zdvg_9STQ/viewform"
               class="btn blue pulse"
@@ -881,8 +901,8 @@
           <div class="col m4 l4 s12 center m-mobile">
             <span
               >Mysore cotton rugs imported from India for sale at the studio
-              or<a href="shop.html">&nbsp;online</a>. Manduka Pro mats are out
-              of stock.</span
+              or<a class="purple-text" href="shop.html">&nbsp;online</a>.
+              Manduka Pro mats are out of stock.</span
             >
           </div>
         </div>
@@ -904,7 +924,7 @@
       </div>
     </main>
 
-    <footer class="page-footer purple darken-4">
+    <footer class="page-footer purple darken-3">
       <div class="footer-copyright">
         <div class="container">
           <a href="copyright.html" class="purple-text text-lighten-5">
@@ -941,6 +961,11 @@
       var instances = M.Collapsible.init(elems, {
         accordion: false,
       });
+
+      setTimeout(() => {
+        var buttonFlashing = document.getElementById("button-flashing");
+        buttonFlashing.classList.remove("pulse");
+      }, 5000);
     </script>
   </body>
 </html>

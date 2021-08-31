@@ -1,6 +1,36 @@
+.logo-desktop {
+  height: 114px;
+  margin: 15px 10px 0px 0px;
+}
+
+.purple-text, #collapsible-schedule a {
+  color: #639 !important;
+}
+
+.grey-text {
+  color: #666 !important;
+}
+
+.logo-tablet {
+  height: 90px;
+  margin: 0px 0px 0px 0px;
+}
+
+blockquote {
+  border: 0px !important;
+}
+
+#logo {
+  transition: height 0.5s, width 0.55s;
+}
+
+main > *:first-child {
+  transition: padding-top 0.5s;
+}
+
 .icon-img {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
 }
 
 body {
@@ -90,6 +120,6 @@ main {
   font-weight: bold;
 }
 
-.collapsible-body{
+.collapsible-body {
   background-color: white;
 }

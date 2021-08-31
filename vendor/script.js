@@ -1,18 +1,23 @@
 let navlogo;
+let container;
 
 function handleResize() {
   const w = window.innerWidth;
-  if (w > 1200 || w < 992) {
-    navlogo.classList.remove("right");
-    navlogo.classList.add("center");
+  if (w > 1200) {
+    navlogo.classList.remove("logo-tablet");
+    navlogo.classList.add("logo-desktop");
+
+    container.style.paddingTop = "0px";
   } else {
-    navlogo.classList.remove("center");
-    navlogo.classList.add("right");
+    navlogo.classList.remove("logo-desktop");
+    navlogo.classList.add("logo-tablet");
+    container.style.paddingTop = "25px";
   }
 }
 
 (function () {
-  navlogo = document.querySelector(".nav-wrapper > img");
+  navlogo = document.getElementById("logo");
+  container = document.querySelector("main > *:first-child");
   handleResize();
 
   window.addEventListener("resize", () => {
