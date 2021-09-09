@@ -26,6 +26,24 @@
           width: 100%;
         }
       }
+      @media only screen and (max-width: 600px) {
+        #e-p1 {
+          margin-top: 30px;
+        }
+        .m-mobile {
+          margin-top: 30px;
+        }
+      }
+      #e-p1 {
+        width: 100%;
+      }
+      .button-form > button {
+        width: 295px;
+      }
+      .button-form > div {
+        color: grey;
+        font-style: italic;
+      }
     </style>
 
     <title>Purple Yoga Hawaii &mdash; Waikiki-Ala Moana, Honolulu</title>
@@ -161,69 +179,72 @@
     <!--  -->
 
     <header>
-      <div class="navbar-fixed">
-        <nav class="purple darken-3">
-          <div class="nav-wrapper">
-            <img
-              src="assets/logo.gif"
-              alt="logo"
-              id="logo"
-              class="brand-logo right z-depth-3 logo-desktop"
-            />
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-              <i class="material-icons">menu</i>
-            </a>
-            <div class="hide-on-large-only">Schedule</div>
-            <ul class="left hide-on-med-and-down">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li class="active">
-                <a href="schedule.html">Schedule</a>
-              </li>
-              <li>
-                <a href="classes.html">Classes</a>
-              </li>
-              <li>
-                <a href="workshops.html">Workshops</a>
-              </li>
-              <li>
-                <a href="profiles.html">Profiles</a>
-              </li>
-              <li>
-                <a href="shop.html">Shop</a>
-              </li>
-              <li>
-                <a href="location.html">Location</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container">
+        <nav class="shadow-none">
+          <img
+            src="assets/logo.gif"
+            alt="logo"
+            id="logo"
+            class="brand-logo right"
+          />
+          <a
+            id="menu-mobile"
+            href="#"
+            data-target="mobile-nav"
+            class="sidenav-trigger"
+          >
+            <i class="material-icons">menu</i>
+          </a>
+          <div class="hide-on-large-only">Schedule</div>
+          <ul class="left hide-on-med-and-down">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="schedule.html">Schedule</a>
+            </li>
+            <li>
+              <a href="classes.html">Classes</a>
+            </li>
+            <li>
+              <a href="workshops.html">Workshops</a>
+            </li>
+            <li>
+              <a href="profiles.html">Profiles</a>
+            </li>
+            <li>
+              <a href="shop.html">Shop</a>
+            </li>
+            <li>
+              <a href="location.html">Location</a>
+            </li>
+          </ul>
         </nav>
-      </div>
 
-      <ul class="sidenav" id="mobile-demo">
-        <li>
-          <a href="index.html"> Home </a>
-        </li>
-        <li class="active">
-          <a href="schedule.html"> Schedule </a>
-        </li>
-        <li>
-          <a href="classes.html"> Classes </a>
-        </li>
-        <li>
-          <a href="workshops.html"> Workshops </a>
-        </li>
-        <li>
-          <a href="profiles.html"> Profiles </a>
-        </li>
-        <li>
-          <a href="shop.html"> Shop </a>
-        </li>
-        <li>
-          <a href="location.html"> Location </a>
-        </li>
-      </ul>
+        <ul class="sidenav" id="mobile-nav">
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li class="active">
+            <a href="schedule.html"> Schedule </a>
+          </li>
+          <li>
+            <a href="classes.html"> Classes </a>
+          </li>
+          <li>
+            <a href="workshops.html"> Workshops </a>
+          </li>
+          <li>
+            <a href="profiles.html"> Profiles </a>
+          </li>
+          <li>
+            <a href="shop.html"> Shop </a>
+          </li>
+          <li>
+            <a href="location.html"> Location </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -238,10 +259,14 @@
             </blockquote>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-bottom: 50px;">
           <h6
             class="grey-text center"
-            style="font-style: italic; font-size: 14px"
+            style="
+              font-style: italic;
+              font-size: 14px;
+              padding: 40px 10px 0px 10px;
+            "
           >
             Click the class or teacher names for more information. Door opens 15
             minutes before start time.
@@ -256,7 +281,7 @@
                   <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
-                        <th>Class</th>
+                        <th>-</th>
                         <th>Time</th>
                         <th>Teacher(s)</th>
                       </tr>
@@ -330,7 +355,7 @@
                   <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
-                        <th>Class</th>
+                        <th>-</th>
                         <th>Time</th>
                         <th>Teacher(s)</th>
                       </tr>
@@ -424,7 +449,7 @@
                   <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
-                        <th>Class</th>
+                        <th>-</th>
                         <th>Time</th>
                         <th>Teacher(s)</th>
                       </tr>
@@ -498,7 +523,7 @@
                   <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
-                        <th>Class</th>
+                        <th>-</th>
                         <th>Time</th>
                         <th>Teacher(s)</th>
                       </tr>
@@ -572,7 +597,7 @@
                   <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
-                        <th>Class</th>
+                        <th>-</th>
                         <th>Time</th>
                         <th>Teacher(s)</th>
                       </tr>
@@ -646,7 +671,7 @@
                   <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
-                        <th>Class</th>
+                        <th>-</th>
                         <th>Time</th>
                         <th>Teacher(s)</th>
                       </tr>
@@ -728,7 +753,7 @@
                   <table style="table-layout: fixed" class="striped centered">
                     <thead>
                       <tr>
-                        <th>Class</th>
+                        <th>-</th>
                         <th>Time</th>
                         <th>Teacher(s)</th>
                       </tr>
@@ -818,13 +843,13 @@
         <!-- BUTTONS FOR FORM -->
         <!-- BUTTONS FOR FORM -->
         <!--  -->
-        <div class="row">
+        <div class="row center">
           <div class="col s12 m6 l6">
             <div class="button-form">
               <button
                 form="first-class-k-10"
                 type="submit"
-                class="waves-effect waves-light btn purple lighten-1 white-text"
+                class="waves-effect waves-light btn purple white-text"
               >
                 First class Kama'aina $10
               </button>
@@ -833,7 +858,7 @@
               <button
                 form="first-class-zoom-10"
                 type="submit"
-                class="waves-effect waves-light btn purple lighten-1 white-text"
+                class="waves-effect waves-light btn purple white-text"
               >
                 First class Zoom $10
               </button>
@@ -842,16 +867,17 @@
               <button
                 form="single-class-22"
                 type="submit"
-                class="waves-effect waves-light btn purple lighten-1 white-text"
+                class="waves-effect waves-light btn purple white-text"
               >
-                Single class $22</button
-              ><span>no expiration! no refunds</span>
+                Single class $22
+              </button>
+              <div>no expiration! no refunds</div>
             </div>
             <div class="button-form">
               <button
                 form="five-classes-95"
                 type="submit"
-                class="waves-effect waves-light btn purple lighten-1 white-text"
+                class="waves-effect waves-light btn purple white-text"
               >
                 5 classes $95
               </button>
@@ -860,19 +886,21 @@
               <button
                 form="ten-classes-160"
                 type="submit"
-                class="waves-effect waves-light btn purple lighten-1 white-text"
+                class="waves-effect waves-light btn purple white-text"
               >
-                10 classes $160</button
-              ><span>no expiration! no refunds, no transfers</span>
+                10 classes $160
+              </button>
+              <div>no expiration! no refunds, no transfers</div>
             </div>
             <div class="button-form" style="margin-bottom: 0px">
               <button
                 form="one-month-unlimited-classes-200"
                 type="submit"
-                class="waves-effect waves-light btn purple lighten-1 white-text"
+                class="waves-effect waves-light btn purple white-text"
               >
-                1 month unlimited $200</button
-              ><span>no expiration! no refunds, no transfers</span>
+                1 month unlimited $200
+              </button>
+              <div>no expiration! no refunds, no transfers</div>
             </div>
           </div>
           <div class="col s12 m6 l6">
@@ -888,7 +916,7 @@
         <!-- END OF BUTTONS FOR FORM -->
         <!--  -->
 
-        <div class="row grey-text">
+        <div class="row grey-text" style="margin-top: 50px;">
           <div class="col s12 m6 center">
             <div>
               <div>New students please complete the registration form.</div>
@@ -901,35 +929,35 @@
                 >REGISTRATION FORM</a
               >
 
-              <div style="margin-top: 15px">
-                <span
-                  >Please bring a yoga mat and a small towel. You may store your
-                  mat on shelves at the studio.</span
-                >
+              <div style="margin-top: 40px">
+                <div style="max-width: 310px; margin: auto">
+                  Please bring a yoga mat and a small towel. You may store your
+                  mat on shelves at the studio.
+                </div>
               </div>
 
-              <div style="margin-top: 15px">
-                <span
-                  >Mysore cotton rugs imported from India for sale at the studio
+              <div style="margin-top: 40px">
+                <div style="max-width: 310px; margin: auto">
+                  Mysore cotton rugs imported from India for sale at the studio
                   or<a class="purple-text" href="shop.html">&nbsp;online</a>.
-                  Manduka Pro mats are out of stock.</span
-                >
+                  Manduka Pro mats are out of stock.
+                </div>
               </div>
             </div>
           </div>
           <div class="col s12 m6 center m-mobile">
             <div>
-              <span
-                >Private lessons available by arrangement at the studio. $80 for
+              <div style="max-width: 310px; margin: auto">
+                Private lessons available by arrangement at the studio. $80 for
                 60 minutes, $100 for 75 minutes, $120 for 90 minutes. Add $20
-                for a lesson in your home or hotel.</span
-              >
+                for a lesson in your home or hotel.
+              </div>
             </div>
-            <div style="margin-top: 15px">
-              <span
-                >To gift classes (left) put "gift" in the message field; we'll
-                contact you for delivery.</span
-              >
+            <div style="margin-top: 40px">
+              <div style="max-width: 310px; margin: auto">
+                To gift classes (left) put "gift" in the message field; we'll
+                contact you for delivery.
+              </div>
             </div>
           </div>
         </div>
@@ -939,9 +967,7 @@
     <footer class="page-footer purple darken-3">
       <div class="footer-copyright">
         <div class="container">
-          <a href="copyright.html" class="purple-text text-lighten-5">
-            © Copyright 2001–2021</a
-          >
+          <a href="copyright.html"> © Copyright 2001–2021</a>
           <span class="grey-text text-lighten-4 right">
             <a
               href="https://www.facebook.com/PurpleYogaHawaii/"

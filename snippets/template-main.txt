@@ -21,15 +21,15 @@
   </head>
   <body>
     <header>
-      <nav class="purple darken-3">
-        <div class="nav-wrapper">
+      <nav class="shadow-none">
+        
           <img
             src="assets/logo.gif"
             alt="logo"
             class="brand-logo hide"
             style="height: 100%"
           />
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <a id="menu-mobile" href="#" data-target="mobile-nav" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
           <ul class="left hide-on-med-and-down">
@@ -55,10 +55,9 @@
               <a href="location.html">Location</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
 
-      <ul class="sidenav" id="mobile-demo">
+      <ul class="sidenav" id="mobile-nav">
         <li>
           <a href="index.html"> Home </a>
         </li>
@@ -83,7 +82,9 @@
       </ul>
     </header>
 
-    <main></main>
+    <main>
+        </div>
+      </main>
 
     <footer class="page-footer purple darken-3">
       <div class="footer-copyright">
