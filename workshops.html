@@ -16,24 +16,18 @@
     />
 
     <style>
-      .collection {
-        border: 0px;
+      #links a {
+        text-transform: none !important;
+        color: #663399;
+        font-size: 24px;
+        font-weight: bold;
       }
-
-      .collection-header,
-      .collection-item {
-        border-bottom: none !important;
-      }
-
-      .list-bulleted:not(.browser-default) {
-        margin-top: 10px;
-        margin-bottom: 15px;
-      }
-
-      .list-bulleted:not(.browser-default) li:not(.collection-header) {
-        list-style-type: disc;
-        margin-top: 10px;
-        list-style-position: inside;
+      @media only screen and (max-width: 600px) {
+        #links a {
+          width: 100%;
+          margin-top: 15px;
+        }
+        
       }
     </style>
 
@@ -116,17 +110,34 @@
 
 
         <!-- SECTION FOR NO TRAININGS SCHEDULED-->
-        <div class="row center">
-          <h5 class="purple-text bold-text">
-            No workshops or trainings currently scheduled.
-          </h5>
-        </div>
+
+          <!-- <div class="row center">
+            <h5 class="purple-text bold-text">
+              No workshops or trainings currently scheduled.
+            </h5>
+          </div> -->
+
         <!-- END OF SECTION FOR NO TRAININGS SCHEDULED -->
 
 
-        
+        <!-- SECTION FOR LINKS  -->
 
+          <div class="row center" id="links">
+            <a href="#event1" class="waves-effect waves-purple btn-flat">Event 1</a>
+            <a href="#event2" class="waves-effect waves-purple btn-flat">Event 2</a>
+            <a href="#event3" class="waves-effect waves-purple btn-flat">Event 3</a>
+            <a href="#event4" class="waves-effect waves-purple btn-flat">Event 4</a>
+          </div>
 
+        <!-- END OF SECTION FOR LINKS  -->
+
+        <!-- SECTION FOR EVENTS (HREF OF LINK AND ID OF EVENT CONNECT THE LINK TO ITS CONTENT)  -->
+          
+          <div class="row">
+            
+          </div>
+
+        <!-- END OF SECTION FOR EVENTS  -->
 
 
       </div>

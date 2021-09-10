@@ -43,7 +43,8 @@ blockquote {
 
 #logo {
   cursor: pointer;
-  height: 144px;
+  height: 114px;
+  width: 66px;
 }
 
 main > *:first-child {
@@ -194,7 +195,7 @@ nav a.sidenav-trigger i {
 nav ul li,
 #menu-mobile,
 #menu-mobile + div {
-  padding: 50px 0px 35px 0px !important;
+  padding: 35px 0px 35px 0px !important;
 }
 
 nav ul a {
@@ -220,4 +221,8 @@ nav > div {
 
 .border-none {
   border: none !important;
+}
+
+header > .container {
+  padding-left: 10px;
 }
