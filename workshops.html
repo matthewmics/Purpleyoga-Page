@@ -25,9 +25,9 @@
       @media only screen and (max-width: 600px) {
         #links a {
           width: 100%;
-          margin-top: 15px;
+          margin-top: 12px;
+          font-size: 18px;
         }
-        
       }
     </style>
 
@@ -109,36 +109,146 @@
       <div class="container">
 
 
-        <!-- SECTION FOR NO TRAININGS SCHEDULED-->
 
-          <!-- <div class="row center">
+        <!-- ***** SECTION FOR NO TRAININGS SCHEDULED ***** -->
+
+          <div class="row center">
             <h5 class="purple-text bold-text">
               No workshops or trainings currently scheduled.
             </h5>
+          </div>
+
+        <!-- ***** END OF SECTION FOR NO TRAININGS SCHEDULED ***** -->
+
+
+
+
+
+
+        <!-- ***** SECTION FOR LINKS ***** -->
+
+          <!-- <div class="row center" id="links">
+            <a href="#event1" class="waves-effect waves-purple btn-flat"
+              >Event 1</a
+            >
+            <a href="#event2" class="waves-effect waves-purple btn-flat"
+              >Event 2</a
+            >
+            <a href="#event3" class="waves-effect waves-purple btn-flat"
+              >Event 3</a
+            >
+            <a href="#event4" class="waves-effect waves-purple btn-flat"
+              >Event 4</a
+            >
           </div> -->
 
-        <!-- END OF SECTION FOR NO TRAININGS SCHEDULED -->
+        <!-- ***** END OF SECTION FOR LINKS  ***** -->
 
 
-        <!-- SECTION FOR LINKS  -->
 
-          <div class="row center" id="links">
-            <a href="#event1" class="waves-effect waves-purple btn-flat">Event 1</a>
-            <a href="#event2" class="waves-effect waves-purple btn-flat">Event 2</a>
-            <a href="#event3" class="waves-effect waves-purple btn-flat">Event 3</a>
-            <a href="#event4" class="waves-effect waves-purple btn-flat">Event 4</a>
-          </div>
 
-        <!-- END OF SECTION FOR LINKS  -->
 
-        <!-- SECTION FOR EVENTS (HREF OF LINK AND ID OF EVENT CONNECT THE LINK TO ITS CONTENT)  -->
-          
-          <div class="row">
-            
-          </div>
 
-        <!-- END OF SECTION FOR EVENTS  -->
+        <!-- ***** SECTION FOR EVENTS (HREF OF LINK AND ID OF EVENT CONNECT THE LINK TO ITS CONTENT) ***** -->
 
+          <!-- <div class="row">
+
+            <div class="col s12" id="event1">
+              <div class="card">
+                <div class="card-image">
+                  <img src="assets/photo_placeholder.jpg" />
+                </div>
+
+                <div class="card-content">
+                  <span class="card-title purple-text bold-text">Event 1</span>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type
+                    specimen book.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+              
+            <div class="col s12" id="event2">
+              <div class="card">
+                <div class="card-image">
+                  <img src="assets/photo_placeholder.jpg" />
+                </div>
+
+                <div class="card-content">
+                  <span class="card-title purple-text bold-text">Event 2</span>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type
+                    specimen book.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col s12" id="event3">
+              <div class="card">
+                <div class="card-image">
+                  <img src="assets/photo_placeholder.jpg" />
+                </div>
+
+                <div class="card-content">
+                  <span class="card-title purple-text bold-text">Event 3</span>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type
+                    specimen book.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col s12" id="event4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="assets/photo_placeholder.jpg" />
+                </div>
+
+                <div class="card-content">
+                  <span class="card-title purple-text bold-text">Event 4</span>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type
+                    specimen book.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+          </div> -->
+
+        <!-- ***** END OF SECTION FOR EVENTS ***** -->
+
+
+
+
+
+        <div class="fixed-action-btn scale-none scale-transition" style="margin-bottom: 27px">
+          <a
+            class="btn-floating btn-large purple darken-4"
+            onclick="handleScroll()"
+          >
+            <i class="material-icons">arrow_upward</i>
+          </a>
+        </div>
 
       </div>
     </main>
@@ -175,5 +285,27 @@
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <script src="vendor/initialize.nav.js"></script>
     <script src="vendor/script.js"></script>
+    <script>
+      var handleScroll = () => {
+        window.scrollTo(0, 0);
+      };
+
+      (function () {
+        var elem = document.querySelector(".fixed-action-btn");
+
+        document.addEventListener("DOMContentLoaded", function () {
+          var instances = M.FloatingActionButton.init(elem, {});
+        });
+
+        window.addEventListener("scroll", (ev) => {
+          if (!elem) return;
+          if (window.scrollY >= 200) {
+            elem.classList.remove("scale-none");
+          } else {
+            elem.classList.add("scale-none");
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
