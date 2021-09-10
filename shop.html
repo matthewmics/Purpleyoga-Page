@@ -25,6 +25,11 @@
       .btn-flat {
         text-transform: none;
       }
+      @media only screen and (min-width: 1200px) {
+        #con {
+          width: 45% !important;
+        }
+      }
     </style>
 
     <title>Purple Yoga Hawaii &mdash; Waikiki-Ala Moana, Honolulu</title>
@@ -134,106 +139,78 @@
     <!--  -->
 
     <header>
-      <nav class="shadow-none">
-        <img
-          src="assets/logo.gif"
-          alt="logo"
-          id="logo"
-          class="brand-logo right"
-        />
-        <a
-          id="menu-mobile"
-          href="#"
-          data-target="mobile-nav"
-          class="sidenav-trigger"
-        >
-          <i class="material-icons">menu</i>
-        </a>
-        <div class="hide-on-large-only">Shop</div>
-        <ul class="left hide-on-med-and-down">
+      <div class="container">
+        <nav class="shadow-none">
+          <img
+            src="assets/logo.gif"
+            alt="logo"
+            id="logo"
+            class="brand-logo right"
+          />
+          <a
+            id="menu-mobile"
+            href="#"
+            data-target="mobile-nav"
+            class="sidenav-trigger"
+          >
+            <i class="material-icons">menu</i>
+          </a>
+          <div class="hide-on-large-only">Shop</div>
+          <ul class="left hide-on-med-and-down">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="schedule.html">Schedule</a>
+            </li>
+            <li>
+              <a href="classes.html">Classes</a>
+            </li>
+            <li>
+              <a href="workshops.html">Events</a>
+            </li>
+            <li>
+              <a href="profiles.html">Teachers</a>
+            </li>
+            <li class="active">
+              <a href="shop.html">Shop</a>
+            </li>
+            <li>
+              <a href="location.html">Location</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="sidenav" id="mobile-nav">
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.html"> Home </a>
           </li>
           <li>
-            <a href="schedule.html">Schedule</a>
+            <a href="schedule.html"> Schedule </a>
           </li>
           <li>
-            <a href="classes.html">Classes</a>
+            <a href="classes.html"> Classes </a>
           </li>
           <li>
-            <a href="workshops.html">Workshops</a>
+            <a href="workshops.html">Events</a>
           </li>
           <li>
-            <a href="profiles.html">Profiles</a>
+            <a href="profiles.html">Teachers</a>
           </li>
           <li class="active">
-            <a href="shop.html">Shop</a>
+            <a href="shop.html"> Shop </a>
           </li>
           <li>
-            <a href="location.html">Location</a>
+            <a href="location.html"> Location </a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="sidenav" id="mobile-nav">
-        <li>
-          <a href="index.html"> Home </a>
-        </li>
-        <li>
-          <a href="schedule.html"> Schedule </a>
-        </li>
-        <li>
-          <a href="classes.html"> Classes </a>
-        </li>
-        <li>
-          <a href="workshops.html"> Workshops </a>
-        </li>
-        <li>
-          <a href="profiles.html"> Profiles </a>
-        </li>
-        <li class="active">
-          <a href="shop.html"> Shop </a>
-        </li>
-        <li>
-          <a href="location.html"> Location </a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <main>
       <div class="container" id="con">
-        <div
-          class="row buttons-option hide-on-large-only"
-          style="padding-top: 2em"
-        >
-          <div class="col s12 m12 l2">
-            <a
-              href="#canvas-tote"
-              class="waves-effect waves-light btn-flat purple-text bold-text button-first-option"
-            >
-              Canvas Tote Bag
-            </a>
-          </div>
-          <div class="col s12 m12 l2">
-            <a
-              href="#tenugui"
-              class="waves-effect waves-light btn-flat purple-text bold-text"
-            >
-              Tenugui Towel
-            </a>
-          </div>
-          <div class="col s12 m12 l2">
-            <a
-              href="#order"
-              class="waves-effect waves-light btn-flat purple-text bold-text"
-            >
-              To Order
-            </a>
-          </div>
-        </div>
-
         <div class="row">
-          <div class="col s12 l8">
+          <div class="col s12">
             <div class="card">
               <a class="anchor" id="canvas-tote"></a>
               <div class="card-image">
@@ -333,39 +310,12 @@
               <!--  -->
             </ul>
           </div>
-
-          <div
-            class="col l4 buttons-option hide-on-med-and-down"
-            style="padding-top: 1em"
-          >
-            <div>
-              <a
-                href="#canvas-tote"
-                class="waves-effect waves-light btn-flat purple-text bold-text button-first-option"
-              >
-                Canvas Tote Bag
-              </a>
-            </div>
-            <div>
-              <a
-                href="#tenugui"
-                class="waves-effect waves-light btn-flat purple-text bold-text"
-              >
-                Tenugui Towel
-              </a>
-            </div>
-            <div>
-              <a
-                href="#order"
-                class="waves-effect waves-light btn-flat purple-text bold-text"
-              >
-                To Order
-              </a>
-            </div>
-          </div>
         </div>
 
-        <div class="fixed-action-btn hide" style="margin-bottom: 27px">
+        <div
+          class="fixed-action-btn scale-none scale-transition"
+          style="margin-bottom: 27px"
+        >
           <a
             class="btn-floating btn-large purple darken-4"
             onclick="handleScroll()"
@@ -379,10 +329,8 @@
     <footer class="page-footer purple darken-3">
       <div class="footer-copyright">
         <div class="container">
-          <a href="copyright.html" class="purple-text text-lighten-5">
-            © Copyright 2001–2021</a
-          >
-          <span class="grey-text text-lighten-4 right">
+          <a href="copyright.html"> © Copyright 2001–2021</a>
+          <span class="right">
             <a
               href="https://www.facebook.com/PurpleYogaHawaii/"
               target="_blank"
@@ -417,9 +365,9 @@
       window.addEventListener("scroll", (ev) => {
         if (!elem) return;
         if (window.scrollY >= 200) {
-          elem.classList.remove("hide");
+          elem.classList.remove("scale-none");
         } else {
-          elem.classList.add("hide");
+          elem.classList.add("scale-none");
         }
       });
 

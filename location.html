@@ -21,75 +21,86 @@
       .collection {
         border: 0px;
       }
+      .collection-item {
+        border: 0px !important;
+      }
+      @media only screen and (max-width: 1200px) {
+        #contentBikesAndBus {
+          padding-bottom: 0px !important;
+        }
+      }
     </style>
 
     <title>Purple Yoga Hawaii &mdash; Waikiki-Ala Moana, Honolulu</title>
   </head>
   <body>
     <header>
-      
+      <div class="container">
         <nav class="shadow-none">
-          
-            <img
+          <img
             src="assets/logo.gif"
             alt="logo"
             id="logo"
             class="brand-logo right"
           />
-            <a id="menu-mobile" href="#" data-target="mobile-nav" class="sidenav-trigger">
-              <i class="material-icons">menu</i>
-            </a>
-            <div class="hide-on-large-only">Location</div>
-            <ul class="left hide-on-med-and-down">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="schedule.html">Schedule</a>
-              </li>
-              <li>
-                <a href="classes.html">Classes</a>
-              </li>
-              <li>
-                <a href="workshops.html">Workshops</a>
-              </li>
-              <li>
-                <a href="profiles.html">Profiles</a>
-              </li>
-              <li>
-                <a href="shop.html">Shop</a>
-              </li>
-              <li class="active">
-                <a href="location.html">Location</a>
-              </li>
-            </ul>
-          </div>
+          <a
+            id="menu-mobile"
+            href="#"
+            data-target="mobile-nav"
+            class="sidenav-trigger"
+          >
+            <i class="material-icons">menu</i>
+          </a>
+          <div class="hide-on-large-only">Location</div>
+          <ul class="left hide-on-med-and-down">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="schedule.html">Schedule</a>
+            </li>
+            <li>
+              <a href="classes.html">Classes</a>
+            </li>
+            <li>
+              <a href="workshops.html">Events</a>
+            </li>
+            <li>
+              <a href="profiles.html">Teachers</a>
+            </li>
+            <li>
+              <a href="shop.html">Shop</a>
+            </li>
+            <li class="active">
+              <a href="location.html">Location</a>
+            </li>
+          </ul>
         </nav>
-      </div>
 
-      <ul class="sidenav" id="mobile-nav">
-        <li>
-          <a href="index.html"> Home </a>
-        </li>
-        <li>
-          <a href="schedule.html"> Schedule </a>
-        </li>
-        <li>
-          <a href="classes.html"> Classes </a>
-        </li>
-        <li>
-          <a href="workshops.html"> Workshops </a>
-        </li>
-        <li>
-          <a href="profiles.html"> Profiles </a>
-        </li>
-        <li>
-          <a href="shop.html"> Shop </a>
-        </li>
-        <li class="active">
-          <a href="location.html"> Location </a>
-        </li>
-      </ul>
+        <ul class="sidenav" id="mobile-nav">
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a href="schedule.html"> Schedule </a>
+          </li>
+          <li>
+            <a href="classes.html"> Classes </a>
+          </li>
+          <li>
+            <a href="workshops.html">Events</a>
+          </li>
+          <li>
+            <a href="profiles.html">Teachers</a>
+          </li>
+          <li>
+            <a href="shop.html"> Shop </a>
+          </li>
+          <li class="active">
+            <a href="location.html"> Location </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -100,12 +111,30 @@
               <li class="collection-header purple-text">
                 <h5 class="bold-text">Address</h5>
               </li>
-              <li class="collection-item grey-text">
+              <li class="collection-item grey-text border-none">
                 <div>Purple Yoga Hawaii</div>
                 <div>Eaton Square</div>
                 <div>438 Hobron Lane, Suite 312</div>
                 <div>Honolulu, HI 96815</div>
-                <div>(808) 944-8585 info@purpleyoga.com</div>
+                <div>
+                  <p class="grey-text" style="max-width: 300px; margin: 0px">
+                    <a
+                      style="margin-right: 10px"
+                      class="purple-text"
+                      href="sms:+18089448585?body=hello%20there"
+                      >(808) 944-8585</a
+                    >
+                    <span class="purple-text">
+                      <b
+                        ><a
+                          class="purple-text"
+                          href="mailto:info@purpleyoga.com?subject=Yoga%20enquiry"
+                          >info@purpleyoga.com</a
+                        ></b
+                      ></span
+                    >
+                  </p>
+                </div>
               </li>
               <li class="collection-item grey-text">
                 <iframe
@@ -144,12 +173,6 @@
                 </div>
                 <br />
                 <div>
-                  <b style="color: black">Free public parking</b> at Ala Moana
-                  Shopping Center, corner of Ala Moana Boulevard and Atkinson
-                  Drive. Walk is 10 minutes.
-                </div>
-                <br />
-                <div>
                   <b style="color: black">Metered street parking </b>(50 cents
                   for 10 minutes) along Hobron Lane between Lipeepee Street and
                   Ena Road.
@@ -159,13 +182,6 @@
                 <img src="assets/photo_parking.jpg" style="width: 100%" />
               </li>
               <li class="collection-item">
-                <div>
-                  <b style="color: black">Public parking building</b> (above) at
-                  the intersection of Hobron Lane and Lipeepee St, 300 feet west
-                  of pedestrian entrance. Open 24 hours, seven days. Grace
-                  period 20 minutes.
-                </div>
-                <br />
                 <div>
                   <b style="color: black">Park on levels 2, 3 or 4</b> and walk
                   to the far east end of each level where walkways lead to the
@@ -188,7 +204,11 @@
               <li class="collection-header purple-text">
                 <h5 class="bold-text">Bikes and Bus</h5>
               </li>
-              <li class="collection-item">
+              <li
+                id="contentBikesAndBus"
+                class="collection-item"
+                style="padding-bottom: 40px"
+              >
                 <div>
                   <b style="color: black">Bikes and motorbikes</b> not permitted
                   inside the Square. Bikes can be locked to a wall bar at the
@@ -205,83 +225,32 @@
           </div>
         </div>
         <div class="row" style="margin-top: 20px">
-          <h6
-            style="
-              color: #37474f;
-              margin-bottom: 0px;
-              margin-left: 20px;
-            "
-          >
-            Studio Rental Rates and Availability
-          </h6>
-          <div class="row">
-            <div class="col l6">
-              <ul class="collection with-header">
-                <li class="collection-header purple-text">
-                  <h5 class="bold-text">Rental Rates and Availability</h5>
-                </li>
-                <li class="collection-item">
-                  <div>
-                    <b style="color: black">$20 per hour</b> for one or two
-                    people
-                  </div>
-                  <div>
-                    <b style="color: black">$40 per hour</b>for three or more
-                    people
-                  </div>
-                  <br />
-                  <div>
-                    Generally the studio is available for rental outside of our
-                    regular Schedule. Please email or call (808) 944-8585 with
-                    your request for days and hours and we will do our best to
-                    fit you in.
-                  </div>
-                </li>
-                <li class="collection-item">
-                  <img src="assets/photo_studionorth.jpg" style="width: 100%" />
-                </li>
-              </ul>
-            </div>
-            <div class="col l6">
-              <ul class="collection with-header">
-                <li class="collection-header purple-text">
-                  <h5 class="bold-text">Studio Information</h5>
-                </li>
-                <li class="collection-item">
-                  <div>
-                    The studio is approx. 1300 sq ft and the main floor is
-                    approx. 700 sq ft. There is a large entrance and reception
-                    area, two changing rooms and another empty room approx.
-                    100sq ft.
-                  </div>
-                  <br />
-                  <div>
-                    Choose between air-conditioning or natural ventilation from
-                    the south-facing sash windows. Restroom outside on the same
-                    floor.
-                  </div>
-                </li>
-                <li class="collection-item">
-                  <img src="assets/photo_studiosouth.jpg" style="width: 100%" />
-                </li>
-              </ul>
-            </div>
+          <div class="col s12 m6">
+            <ul class="collection with-header">
+              <li class="collection-item">
+                <img src="assets/photo_studionorth.jpg" style="width: 100%" />
+              </li>
+            </ul>
+          </div>
+          <div class="col s12 m6">
+            <ul class="collection with-header">
+              <li class="collection-item">
+                <img src="assets/photo_studiosouth.jpg" style="width: 100%" />
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="row center">
+        <div class="row center" style="transform: translateY(55px)">
           <a class="purple-text" href="credits.html">Website credits</a>
         </div>
-      
-        </div>
-      </main>
+      </div>
+    </main>
 
     <footer class="page-footer purple darken-3">
       <div class="footer-copyright">
         <div class="container">
-          <a href="copyright.html" class="purple-text text-lighten-5">
-            © Copyright 2001–2021</a
-          >
+          <a href="copyright.html"> © Copyright 2001–2021</a>
           <span class="grey-text text-lighten-4 right">
             <a
               href="https://www.facebook.com/PurpleYogaHawaii/"
