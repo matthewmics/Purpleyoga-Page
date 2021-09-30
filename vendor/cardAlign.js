@@ -52,7 +52,7 @@ function alignCard(row, isMob) {
             alignCard(row, window.innerWidth <= 600);
         });
       });
-    }, 500);
+    }, 1250);
   });
 })();
 
