@@ -15,9 +15,45 @@
       rel="stylesheet"
     />
 
+    <link href="node_modules/animate.css/animate.min.css" rel="stylesheet" />
+
     <link href="vendor/style.css" rel="stylesheet" />
 
     <style>
+      .card {
+        height: 100%;
+      }
+      .row {
+        margin-bottom: 0px !important;
+      }
+      #card-panel-pregnancy-yoga {
+        margin-top: 2.1rem;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+      }
+      @media only screen and (max-width: 700px) {
+        #card-panel-pregnancy-yoga {
+          margin-top: 1.75rem;
+        }
+        .m6,
+        .m4 {
+          width: 100% !important;
+        }
+        .row {
+          margin-bottom: 20px !important;
+        }
+        .col:first-child {
+          margin-bottom: 20px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .col:first-child {
+          margin-bottom: 0px;
+        }
+        .row {
+          margin-bottom: 0px !important;
+        }
+      }
     </style>
 
     <title>Purple Yoga Hawaii &mdash; Waikiki-Ala Moana, Honolulu</title>
@@ -77,7 +113,7 @@
             <a href="classes.html"> Classes </a>
           </li>
           <li>
-           <a href="workshops.html">Events</a>
+            <a href="workshops.html">Events</a>
           </li>
           <li>
             <a href="profiles.html">Teachers</a>
@@ -95,13 +131,13 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col s12" id="content">
+          <div class="col m6">
             <div class="card">
-              <a class="anchor" id="ashtanga"></a>
               <div class="card-image">
                 <img src="assets/photo_ashtanga.jpg" />
               </div>
-              <div class="card-content">
+              <div class="card-content" id="ashtanga">
+                <a class="anchor" id="ashtanga"></a>
                 <div class="card-title purple-text bold-text">
                   Ashtanga Yoga Mysore style
                 </div>
@@ -143,9 +179,7 @@
                   >
                   of practice.
                 </p>
-              </div>
-
-              <div class="card-content">
+                <br />
                 <a class="anchor" id="ashtanga-led"></a>
                 <div class="card-title purple-text bold-text">
                   Ashtanga Yoga Led class
@@ -174,6 +208,9 @@
                 </p>
               </div>
             </div>
+          </div>
+
+          <div class="col m6">
             <div class="card">
               <a class="anchor" id="vinyasa"></a>
               <div class="card-image"><img src="assets/photo_vin.jpg" /></div>
@@ -213,90 +250,90 @@
                 </p>
               </div>
             </div>
-            <div class="card">
-              <a class="anchor" id="pregnancy"></a>
-              <div class="card-image">
-                <img src="assets/photo_pregnancy.jpg" />
-              </div>
-              <div class="card-content">
-                <div class="card-title purple-text bold-text">
-                  Pregnancy Yoga
-                </div>
-                <p>
-                  Pregnancy is a time of change and celebration, as well as
-                  anticipation and anxiety. Yoga brings great awareness to what
-                  is going on within you and it gives you energy, restoring what
-                  you are putting into baby and also preparing you for birth.
-                </p>
-                <br />
-                <p>
-                  Breath is the key. You will learn a technique that you can use
-                  anytime and will be especially helpful during labor. The
-                  breath is combined with postures (asanas) that safely
-                  strengthen your arms and legs and stretch the torso and spine
-                  to create space for growing baby. You may be familiar with
-                  Kegal exercises and in yoga terms this is called mula bandha
-                  (root lock). By practicing pelvic floor exercises you get a
-                  good start for both labor and after baby is born. Calmness
-                  comes from correct breathing and being in a friendly,
-                  supportive environment where you can focus on baby and you.
-                </p>
-                <br />
-                <p>
-                  Class is offered in-person and via Zoom. Due to space
-                  limitations, please email or call (808) 944-8585 before coming
-                  to class. No drop-ins. We recommend starting after your
-                  thirteenth week. Ask your health care provider if yoga is
-                  appropriate for you. The teacher is
-                  <a class="purple-text" href="profiles.html#cathy"
-                    >Cathy Louise</a
-                  >, a mom of three including twins.
-                </p>
-                <br />
-                <p class="red-text">Get a free DVD with your first class</p>
-              </div>
+          </div>
+        </div>
 
-              <a class="anchor" id="momnbaby"></a>
-              <div class="card-content">
-                <div class="card-title purple-text bold-text">
-                  Mom &amp; Baby Yoga
-                </div>
-                <p>
-                  Getting back into exercise after giving birth is not easy for
-                  many new mothers, who find that just leaving the house is a
-                  great effort. Coming to Mom &amp; Baby Yoga not only motivates
-                  you to get out and about with baby, this fun and safe class is
-                  revitalizing and relaxing.
-                </p>
-                <br />
-                <p>
-                  Yoga exercises and movement combined with proper breathing
-                  helps Mom restore the pelvic floor, regain the inner strength
-                  of her abdomen and rediscover a sense of calm. It also
-                  provides babies with a soothing environment to both interact
-                  with Mom and experience their bodies in a new world. One of
-                  the special things about the class is that you are in a
-                  supportive space where you can take time out to nurse. Also,
-                  baby can choose to participate in the class, have a cry or
-                  fall asleep!
-                </p>
-                <br />
-                <p>
-                  The class is suitable for newborns up until they start
-                  crawling and for mothers who have been cleared by their
-                  doctors to resume exercise. Due to space limitations, please
-                  email or call (808) 944-8585 before coming to class. No
-                  drop-ins. The teacher
-                  <a class="purple-text" href="profiles.html#cathy"
-                    >Cathy Louise</a
-                  >
-                  is a mom of three including twins.
-                </p>
+        <div id="card-panel-pregnancy-yoga" class="card-panel">
+          <div class="row noAlign">
+            <div class="col l4 m6 s12 center">
+              <img
+                src="assets/photo_pregnancy.jpg"
+                style="width: 100%; height: auto"
+              />
+            </div>
+            <div class="col l4 m6 s12">
+              <div style="font-size: 24px" class="purple-text bold-text">
+                Pregnancy Yoga
               </div>
+              <p>
+                Pregnancy is a time of change and celebration, as well as
+                anticipation and anxiety. Yoga brings great awareness to what is
+                going on within you and it gives you energy, restoring what you
+                are putting into baby and also preparing you for birth.
+              </p>
+              <p>
+                Breath is the key. You will learn a technique that you can use
+                anytime and will be especially helpful during labor. The breath
+                is combined with postures (asanas) that safely strengthen your
+                arms and legs and stretch the torso and spine to create space
+                for growing baby. You may be familiar with Kegal exercises and
+                in yoga terms this is called mula bandha (root lock). By
+                practicing pelvic floor exercises you get a good start for both
+                labor and after baby is born. Calmness comes from correct
+                breathing and being in a friendly, supportive environment where
+                you can focus on baby and you.
+              </p>
+              <p>
+                Class is offered in-person and via Zoom. Due to space
+                limitations, please email or call (808) 944-8585 before coming
+                to class. No drop-ins. We recommend starting after your
+                thirteenth week. Ask your health care provider if yoga is
+                appropriate for you. The teacher is
+                <a class="purple-text" href="profiles.html#cathy"
+                  >Cathy Louise</a
+                >, a mom of three including twins.
+              </p>
+              <p class="red-text">Get a free DVD with your first class</p>
+            </div>
+            <div class="col l4 m12 s12">
+              <div style="font-size: 24px" class="purple-text bold-text">
+                Mom &amp; Baby Yoga
+              </div>
+              <p>
+                Getting back into exercise after giving birth is not easy for
+                many new mothers, who find that just leaving the house is a
+                great effort. Coming to Mom &amp; Baby Yoga not only motivates
+                you to get out and about with baby, this fun and safe class is
+                revitalizing and relaxing.
+              </p>
+              <p>
+                Yoga exercises and movement combined with proper breathing helps
+                Mom restore the pelvic floor, regain the inner strength of her
+                abdomen and rediscover a sense of calm. It also provides babies
+                with a soothing environment to both interact with Mom and
+                experience their bodies in a new world. One of the special
+                things about the class is that you are in a supportive space
+                where you can take time out to nurse. Also, baby can choose to
+                participate in the class, have a cry or fall asleep!
+              </p>
+              <p>
+                The class is suitable for newborns up until they start crawling
+                and for mothers who have been cleared by their doctors to resume
+                exercise. Due to space limitations, please email or call (808)
+                944-8585 before coming to class. No drop-ins. The teacher
+                <a class="purple-text" href="profiles.html#cathy"
+                  >Cathy Louise</a
+                >
+                is a mom of three including twins.
+              </p>
             </div>
           </div>
         </div>
-        <div class="fixed-action-btn scale-none scale-transition" style="margin-bottom: 27px">
+
+        <div
+          class="fixed-action-btn scale-none scale-transition"
+          style="margin-bottom: 27px"
+        >
           <a
             class="btn-floating btn-large purple darken-4"
             onclick="handleScroll()"
@@ -336,27 +373,35 @@
     <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     <script src="vendor/initialize.nav.js"></script>
     <script src="vendor/script.js"></script>
+    <script src="vendor/cardAlign.js"></script>
 
     <script>
       var handleScroll = () => {
         window.scrollTo(0, 0);
       };
 
-      (function () {
-        var elem = document.querySelector(".fixed-action-btn");
+      var elem = document.querySelector(".fixed-action-btn");
+      var elemTab = document.querySelectorAll(".tabs");
 
-        document.addEventListener("DOMContentLoaded", function () {
-          var instances = M.FloatingActionButton.init(elem, {});
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        var instances = M.FloatingActionButton.init(elem, {});
 
-        window.addEventListener("scroll", (ev) => {
-          if (!elem) return;
-          if (window.scrollY >= 200) {
-            elem.classList.remove("scale-none");
-          } else {
-            elem.classList.add("scale-none");
-          }
-        });
+        var instance = M.Tabs.init(elemTab, { swipeable: false });
+      });
+
+      window.addEventListener("scroll", (ev) => {
+        if (!elem) return;
+        if (window.scrollY >= 200) {
+          elem.classList.remove("scale-none");
+        } else {
+          elem.classList.add("scale-none");
+        }
+      });
+
+      (function(){
+        setTimeout(() => {
+          
+        }, 500);
       })();
     </script>
   </body>
