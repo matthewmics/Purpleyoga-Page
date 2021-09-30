@@ -1,5 +1,3 @@
-
-
 function alignCard(row, isMob) {
   var cards = row.querySelectorAll(".row > .col");
 
@@ -39,18 +37,19 @@ function alignCard(row, isMob) {
   }
 }
 
-
-(function () {
-  var rows = document.querySelectorAll(".row");
-  rows.forEach((row) => {
-    if(!row.classList.contains("noAlign"))
-    alignCard(row, window.innerWidth <= 600);
-  });
-
-  window.addEventListener("resize", () => {
+setTimeout(() => {
+  (function () {
+    var rows = document.querySelectorAll(".row");
     rows.forEach((row) => {
-      if(!row.classList.contains("noAlign"))
-      alignCard(row, window.innerWidth <= 600);
+      if (!row.classList.contains("noAlign"))
+        alignCard(row, window.innerWidth <= 600);
     });
-  });
-})();
+
+    window.addEventListener("resize", () => {
+      rows.forEach((row) => {
+        if (!row.classList.contains("noAlign"))
+          alignCard(row, window.innerWidth <= 600);
+      });
+    });
+  })();
+}, 500);
