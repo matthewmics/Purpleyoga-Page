@@ -21,7 +21,7 @@
       .button-weekend {
         width: 450px;
       }
-      
+
       #messageClickClass {
         font-style: italic;
         font-size: 15px;
@@ -278,7 +278,7 @@
           </h6>
           <div class="col l12 m12 s12 xl12">
             <ul class="collapsible expandable" id="collapsible-schedule">
-              <li class="active">
+              <li>
                 <div class="collapsible-header" tabindex="0">
                   <i class="material-icons">date_range</i>MONDAY
                 </div>
@@ -1004,8 +1004,15 @@
 
     <script>
       var elems = document.querySelectorAll(".collapsible");
+
       var instances = M.Collapsible.init(elems, {
         accordion: false,
+      });
+
+      elems.forEach((e) => {
+        var instance = M.Collapsible.getInstance(e);
+        instance.close();
+        instance.open();
       });
 
       setTimeout(() => {
